@@ -1,0 +1,110 @@
+{%- liquid
+  assign header_menu = settings.header_menu
+  assign logo = settings.logo
+-%}
+
+<div
+  class="header-wrapper{% if settings.header_sticky %} header-wrapper--sticky{% endif %}"
+  style="--header-bg: {{ settings.header_bg }}; --header-text: {{ settings.header_text }}; --logo-max-width: {{ settings.logo_max_width }}px;"
+>
+  <div class="page-width">
+    <header class="header">
+      {%- comment -%} Mobile menu toggle {%- endcomment -%}
+      <button class="header__mobile-toggle" data-mobile-nav-toggle aria-label="{{ 'general.menu' | t }}">
+        {% render 'icon-menu' %}
+      </button>
+
+      {%- comment -%} Logo {%- endcomment -%}
+      <a href="{{ routes.root_url }}" class="header__logo">
+        {%- if logo -%}
+          <img
+            src="{{ logo | image_url: width: 300 }}"
+            alt="{{ shop.name | escape }}"
+            width="{{ settings.logo_max_width }}"
+            height="{{ settings.logo_max_width | divided_by: logo.aspect_ratio | round }}"
+            loading="eager"
+          >
+        {%- else -%}
+          <span class="header__logo-text">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+
+      {%- comment -%} Desktop navigation {%- endcomment -%}
+      <nav class="header__nav" role="navigation">
+        {%- for link in linklists[header_menu].links -%}
+          <div class="header__nav-item{% if link.links.size > 0 %} header__nav-item--has-children{% endif %}">
+            <a href="{{ link.url }}">{{ link.title }}</a>
+            {%- if link.links.size > 0 -%}
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="1 1 5 5 9 1"/></svg>
+              <div class="header__dropdown">
+                {%- for child_link in link.links -%}
+                  <a href="{{ child_link.url }}" class="header__dropdown-link">{{ child_link.title }}</a>
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </nav>
+
+      {%- comment -%} Icons (search, cart) {%- endcomment -%}
+      <div class="header__icons">
+        {%- if settings.header_show_search -%}
+          <a href="{{ routes.search_url }}" class="header__icon" aria-label="{{ 'general.search' | t }}">
+            {% render 'icon-search' %}
+          </a>
+        {%- endif -%}
+
+        {%- if settings.header_show_cart -%}
+          {%- if settings.cart_type == 'drawer' -%}
+            <button class="header__icon" data-cart-drawer-toggle aria-label="{{ 'cart.general.title' | t }}">
+              {% render 'icon-cart' %}
+              <span class="header__cart-count" data-cart-count style="{% if cart.item_count == 0 %}display:none{% endif %}">{{ cart.item_count }}</span>
+            </button>
+          {%- else -%}
+            <a href="{{ routes.cart_url }}" class="header__icon" aria-label="{{ 'cart.general.title' | t }}">
+              {% render 'icon-cart' %}
+              <span class="header__cart-count" data-cart-count style="{% if cart.item_count == 0 %}display:none{% endif %}">{{ cart.item_count }}</span>
+            </a>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    </header>
+  </div>
+</div>
+
+{%- comment -%} Mobile navigation drawer {%- endcomment -%}
+<div class="mobile-nav" data-mobile-nav>
+  <div class="mobile-nav__overlay"></div>
+  <div class="mobile-nav__panel">
+    <button class="mobile-nav__close" data-mobile-nav-close aria-label="{{ 'general.close' | t }}">
+      {% render 'icon-close' %}
+    </button>
+
+    <nav role="navigation">
+      {%- for link in linklists[header_menu].links -%}
+        {%- if link.links.size > 0 -%}
+          <button class="mobile-nav__link" data-mobile-submenu-toggle>
+            {{ link.title }}
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-left:auto"><polyline points="1 1 5 5 9 1"/></svg>
+          </button>
+          <div class="mobile-nav__sublinks">
+            <a href="{{ link.url }}" class="mobile-nav__sublink">{{ 'general.view_all' | t }}</a>
+            {%- for child_link in link.links -%}
+              <a href="{{ child_link.url }}" class="mobile-nav__sublink">{{ child_link.title }}</a>
+            {%- endfor -%}
+          </div>
+        {%- else -%}
+          <a href="{{ link.url }}" class="mobile-nav__link">{{ link.title }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </nav>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Header",
+  "class": "section-header",
+  "settings": []
+}
+{% endschema %}

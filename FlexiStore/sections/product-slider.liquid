@@ -1,0 +1,120 @@
+{%- liquid
+  assign collection = section.settings.collection
+  assign limit = section.settings.products_to_show
+-%}
+
+<div class="section{% if section.settings.use_alt_bg %} section--alt{% endif %}">
+  <div class="page-width">
+    <div class="section-header" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        {%- if section.settings.heading != blank -%}
+          <h2>{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <p class="subtitle">{{ section.settings.subheading }}</p>
+        {%- endif -%}
+      </div>
+
+      <div class="product-slider__nav">
+        <button class="product-slider__btn" data-slider-prev aria-label="Previous">
+          {% render 'icon-arrow-left' %}
+        </button>
+        <button class="product-slider__btn" data-slider-next aria-label="Next">
+          {% render 'icon-arrow-right' %}
+        </button>
+      </div>
+    </div>
+
+    <div class="product-slider" data-product-slider>
+      <div class="product-slider__track" data-slider-track>
+        {%- if collection != blank -%}
+          {%- assign slider_collection = collections[collection] -%}
+        {%- else -%}
+          {%- assign slider_collection = collections['all'] -%}
+        {%- endif -%}
+
+        {%- if slider_collection.products.size > 0 -%}
+          {%- for product in slider_collection.products limit: limit -%}
+            <div class="product-slider__slide">
+              {% render 'card-product', product: product %}
+            </div>
+          {%- endfor -%}
+        {%- else -%}
+          {%- for i in (1..8) -%}
+            <div class="product-slider__slide">
+              <div class="card card--{{ settings.card_style }}">
+                <div class="card__media card__media--{{ settings.card_image_ratio }}">
+                  {{ 'product-' | append: forloop.index | placeholder_svg_tag: 'placeholder-svg' }}
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">Example product {{ forloop.index }}</h3>
+                  <div class="card__price"><span>$29.99</span></div>
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- if section.settings.show_view_all and collection != blank -%}
+      <div class="text-center" style="margin-top: 2rem;">
+        <a href="{{ collections[collection].url }}" class="btn btn--secondary">
+          {{ 'general.view_all' | t }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product slider",
+  "tag": "section",
+  "class": "section-product-slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Trending now"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "label": "Products to show",
+      "min": 4,
+      "max": 16,
+      "step": 1,
+      "default": 8
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": "Show 'View all' button",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "use_alt_bg",
+      "label": "Use alternate background color",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product slider"
+    }
+  ]
+}
+{% endschema %}

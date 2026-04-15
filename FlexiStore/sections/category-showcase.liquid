@@ -1,0 +1,86 @@
+{%- capture niche_cat_1 -%}{%- render 'niche-value', key: 'cat_1' -%}{%- endcapture -%}
+{%- capture niche_cat_2 -%}{%- render 'niche-value', key: 'cat_2' -%}{%- endcapture -%}
+{%- capture niche_cat_3 -%}{%- render 'niche-value', key: 'cat_3' -%}{%- endcapture -%}
+
+<div class="section{% if section.settings.use_alt_bg %} section--alt{% endif %}">
+  <div class="page-width">
+    <div class="section-header{% if section.settings.heading_alignment == 'center' %} text-center{% endif %}">
+      <h2>{%- if section.settings.heading != blank -%}{{ section.settings.heading }}{%- else -%}Shop by category{%- endif -%}</h2>
+    </div>
+
+    <div class="category-showcase__grid" style="grid-template-columns: repeat({{ section.settings.columns }}, 1fr);">
+      {%- if section.blocks.size > 0 -%}
+        {%- for block in section.blocks -%}
+          <a href="{{ block.settings.link | default: '#' }}" class="category-card" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.image.alt | default: block.settings.title | escape }}" loading="lazy" width="600" height="800">
+            {%- else -%}
+              {{ 'collection-' | append: forloop.index | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+            <div class="category-card__overlay"></div>
+            <div class="category-card__content">
+              {%- if block.settings.title != blank -%}<h3 class="category-card__title">{{ block.settings.title }}</h3>{%- endif -%}
+              <p class="category-card__count">{{ block.settings.subtitle | default: 'Shop now' }}</p>
+            </div>
+          </a>
+        {%- endfor -%}
+      {%- else -%}
+        {%- capture niche_cat_1_img -%}{%- render 'niche-value', key: 'cat_1_image' -%}{%- endcapture -%}
+        {%- capture niche_cat_2_img -%}{%- render 'niche-value', key: 'cat_2_image' -%}{%- endcapture -%}
+        {%- capture niche_cat_3_img -%}{%- render 'niche-value', key: 'cat_3_image' -%}{%- endcapture -%}
+        <a href="{{ routes.all_products_collection_url }}" class="category-card">
+          {%- assign cat1_img = niche_cat_1_img | strip -%}
+          {%- if cat1_img != blank -%}
+            <img src="{{ cat1_img }}" alt="{{ niche_cat_1 }}" loading="lazy" width="600" height="800" onerror="this.style.display='none'">
+          {%- else -%}
+            {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+          <div class="category-card__overlay"></div>
+          <div class="category-card__content"><h3 class="category-card__title">{{ niche_cat_1 }}</h3><p class="category-card__count">Shop now</p></div>
+        </a>
+        <a href="{{ routes.all_products_collection_url }}" class="category-card">
+          {%- assign cat2_img = niche_cat_2_img | strip -%}
+          {%- if cat2_img != blank -%}
+            <img src="{{ cat2_img }}" alt="{{ niche_cat_2 }}" loading="lazy" width="600" height="800" onerror="this.style.display='none'">
+          {%- else -%}
+            {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+          <div class="category-card__overlay"></div>
+          <div class="category-card__content"><h3 class="category-card__title">{{ niche_cat_2 }}</h3><p class="category-card__count">Shop now</p></div>
+        </a>
+        <a href="{{ routes.all_products_collection_url }}" class="category-card">
+          {%- assign cat3_img = niche_cat_3_img | strip -%}
+          {%- if cat3_img != blank -%}
+            <img src="{{ cat3_img }}" alt="{{ niche_cat_3 }}" loading="lazy" width="600" height="800" onerror="this.style.display='none'">
+          {%- else -%}
+            {{ 'collection-3' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+          <div class="category-card__overlay"></div>
+          <div class="category-card__content"><h3 class="category-card__title">{{ niche_cat_3 }}</h3><p class="category-card__count">Shop now</p></div>
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Category showcase",
+  "tag": "section",
+  "class": "section-category-showcase",
+  "settings": [
+    { "type": "paragraph", "content": "Leave blocks empty to auto-fill based on your store niche." },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "select", "id": "heading_alignment", "label": "Heading alignment", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Center" }], "default": "center" },
+    { "type": "select", "id": "columns", "label": "Columns", "options": [{ "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" }], "default": "3" },
+    { "type": "checkbox", "id": "use_alt_bg", "label": "Use alternate background color", "default": false }
+  ],
+  "blocks": [{ "type": "category", "name": "Category", "settings": [
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Category" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Shop now" },
+    { "type": "url", "id": "link", "label": "Link" }
+  ]}],
+  "presets": [{ "name": "Category showcase" }]
+}
+{% endschema %}

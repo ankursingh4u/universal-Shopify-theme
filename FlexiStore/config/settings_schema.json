@@ -1,0 +1,616 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "FlexiStore",
+    "theme_version": "1.0.0",
+    "theme_author": "FlexiStore",
+    "theme_documentation_url": "https://github.com/flexistore-theme",
+    "theme_support_url": "https://github.com/flexistore-theme/support"
+  },
+  {
+    "name": "Store Niche",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Choose your store niche. The theme will automatically adapt its content, colors, and messaging to match your industry. You can always override anything manually."
+      },
+      {
+        "type": "select",
+        "id": "store_niche",
+        "label": "Store niche",
+        "options": [
+          {
+            "value": "general",
+            "label": "General / Multi-purpose"
+          },
+          {
+            "value": "fashion",
+            "label": "Fashion & Clothing"
+          },
+          {
+            "value": "shoes",
+            "label": "Shoes & Footwear"
+          },
+          {
+            "value": "baby",
+            "label": "Baby & Kids"
+          },
+          {
+            "value": "toys",
+            "label": "Toys & Games"
+          },
+          {
+            "value": "kitchen",
+            "label": "Kitchen & Home"
+          },
+          {
+            "value": "electronics",
+            "label": "Electronics & Tech"
+          },
+          {
+            "value": "beauty",
+            "label": "Beauty & Skincare"
+          },
+          {
+            "value": "sports",
+            "label": "Sports & Fitness"
+          },
+          {
+            "value": "jewelry",
+            "label": "Jewelry & Accessories"
+          },
+          {
+            "value": "pets",
+            "label": "Pets & Animals"
+          },
+          {
+            "value": "food",
+            "label": "Food & Grocery"
+          },
+          {
+            "value": "furniture",
+            "label": "Furniture & Decor"
+          }
+        ],
+        "default": "general"
+      },
+      {
+        "type": "checkbox",
+        "id": "niche_colors",
+        "label": "Auto-apply niche color palette",
+        "default": true,
+        "info": "Automatically sets colors that match your niche. Uncheck to use your own custom colors."
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Primary colors"
+      },
+      {
+        "type": "color",
+        "id": "color_primary",
+        "label": "Primary color",
+        "default": "#1A1A2E"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary",
+        "label": "Secondary color",
+        "default": "#16213E"
+      },
+      {
+        "type": "color",
+        "id": "color_accent",
+        "label": "Accent color",
+        "default": "#E94560"
+      },
+      {
+        "type": "header",
+        "content": "Background colors"
+      },
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Page background",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "color_background_alt",
+        "label": "Alternate section background",
+        "default": "#F8F9FA"
+      },
+      {
+        "type": "header",
+        "content": "Text colors"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Body text",
+        "default": "#333333"
+      },
+      {
+        "type": "color",
+        "id": "color_text_light",
+        "label": "Light text",
+        "default": "#666666"
+      },
+      {
+        "type": "color",
+        "id": "color_heading",
+        "label": "Headings",
+        "default": "#1A1A2E"
+      },
+      {
+        "type": "header",
+        "content": "Border & divider"
+      },
+      {
+        "type": "color",
+        "id": "color_border",
+        "label": "Border color",
+        "default": "#E5E7EB"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Headings"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_heading",
+        "label": "Heading font",
+        "default": "work_sans_n4"
+      },
+      {
+        "type": "select",
+        "id": "heading_weight",
+        "label": "Heading weight",
+        "options": [
+          {
+            "value": "400",
+            "label": "Regular"
+          },
+          {
+            "value": "600",
+            "label": "Semi-bold"
+          },
+          {
+            "value": "700",
+            "label": "Bold"
+          }
+        ],
+        "default": "700"
+      },
+      {
+        "type": "select",
+        "id": "heading_transform",
+        "label": "Heading text transform",
+        "options": [
+          {
+            "value": "none",
+            "label": "None"
+          },
+          {
+            "value": "uppercase",
+            "label": "Uppercase"
+          },
+          {
+            "value": "capitalize",
+            "label": "Capitalize"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "type": "header",
+        "content": "Body text"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_body",
+        "label": "Body font",
+        "default": "work_sans_n4"
+      },
+      {
+        "type": "range",
+        "id": "font_body_size",
+        "label": "Base font size",
+        "min": 14,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "default": 16
+      }
+    ]
+  },
+  {
+    "name": "Buttons",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Primary button"
+      },
+      {
+        "type": "color",
+        "id": "btn_primary_bg",
+        "label": "Background",
+        "default": "#1A1A2E"
+      },
+      {
+        "type": "color",
+        "id": "btn_primary_text",
+        "label": "Text color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "header",
+        "content": "Secondary button"
+      },
+      {
+        "type": "color",
+        "id": "btn_secondary_bg",
+        "label": "Background",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "btn_secondary_text",
+        "label": "Text color",
+        "default": "#1A1A2E"
+      },
+      {
+        "type": "color",
+        "id": "btn_secondary_border",
+        "label": "Border color",
+        "default": "#1A1A2E"
+      },
+      {
+        "type": "header",
+        "content": "Button style"
+      },
+      {
+        "type": "range",
+        "id": "btn_border_radius",
+        "label": "Border radius",
+        "min": 0,
+        "max": 40,
+        "step": 2,
+        "unit": "px",
+        "default": 4
+      },
+      {
+        "type": "range",
+        "id": "btn_padding_vertical",
+        "label": "Vertical padding",
+        "min": 8,
+        "max": 24,
+        "step": 2,
+        "unit": "px",
+        "default": 12
+      },
+      {
+        "type": "range",
+        "id": "btn_padding_horizontal",
+        "label": "Horizontal padding",
+        "min": 16,
+        "max": 48,
+        "step": 2,
+        "unit": "px",
+        "default": 28
+      }
+    ]
+  },
+  {
+    "name": "Layout",
+    "settings": [
+      {
+        "type": "range",
+        "id": "page_width",
+        "label": "Page width",
+        "min": 1000,
+        "max": 1600,
+        "step": 50,
+        "unit": "px",
+        "default": 1200
+      },
+      {
+        "type": "range",
+        "id": "section_spacing",
+        "label": "Vertical spacing between sections",
+        "min": 20,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "grid_gap",
+        "label": "Grid gap",
+        "min": 8,
+        "max": 40,
+        "step": 4,
+        "unit": "px",
+        "default": 20
+      }
+    ]
+  },
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo image"
+      },
+      {
+        "type": "range",
+        "id": "logo_max_width",
+        "label": "Logo max width",
+        "min": 50,
+        "max": 300,
+        "step": 10,
+        "unit": "px",
+        "default": 120
+      },
+      {
+        "type": "link_list",
+        "id": "header_menu",
+        "label": "Main menu",
+        "default": "main-menu"
+      },
+      {
+        "type": "checkbox",
+        "id": "header_sticky",
+        "label": "Enable sticky header",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "header_bg",
+        "label": "Header background",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "header_text",
+        "label": "Header text color",
+        "default": "#1A1A2E"
+      },
+      {
+        "type": "checkbox",
+        "id": "header_show_search",
+        "label": "Show search icon",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "header_show_cart",
+        "label": "Show cart icon",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "color",
+        "id": "footer_bg",
+        "label": "Footer background",
+        "default": "#1A1A2E"
+      },
+      {
+        "type": "color",
+        "id": "footer_text",
+        "label": "Footer text color",
+        "default": "#CCCCCC"
+      },
+      {
+        "type": "color",
+        "id": "footer_heading",
+        "label": "Footer heading color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_menu",
+        "label": "Footer menu",
+        "default": "footer"
+      },
+      {
+        "type": "header",
+        "content": "Newsletter"
+      },
+      {
+        "type": "checkbox",
+        "id": "footer_newsletter",
+        "label": "Show newsletter signup",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "footer_newsletter_heading",
+        "label": "Newsletter heading",
+        "default": "Stay in the loop"
+      },
+      {
+        "type": "text",
+        "id": "footer_newsletter_text",
+        "label": "Newsletter description",
+        "default": "Subscribe for exclusive offers and updates."
+      },
+      {
+        "type": "header",
+        "content": "Social media"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook",
+        "label": "Facebook URL"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram",
+        "label": "Instagram URL"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter",
+        "label": "X (Twitter) URL"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube",
+        "label": "YouTube URL"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok",
+        "label": "TikTok URL"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest",
+        "label": "Pinterest URL"
+      },
+      {
+        "type": "header",
+        "content": "Copyright"
+      },
+      {
+        "type": "text",
+        "id": "footer_copyright",
+        "label": "Copyright text",
+        "default": "All rights reserved."
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "select",
+        "id": "cart_type",
+        "label": "Cart type",
+        "options": [
+          {
+            "value": "drawer",
+            "label": "Cart drawer"
+          },
+          {
+            "value": "page",
+            "label": "Cart page"
+          }
+        ],
+        "default": "drawer"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_show_vendor",
+        "label": "Show product vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_notes",
+        "label": "Enable cart notes",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Product cards",
+    "settings": [
+      {
+        "type": "select",
+        "id": "card_style",
+        "label": "Card style",
+        "options": [
+          {
+            "value": "standard",
+            "label": "Standard"
+          },
+          {
+            "value": "bordered",
+            "label": "Bordered"
+          },
+          {
+            "value": "shadow",
+            "label": "Shadow"
+          }
+        ],
+        "default": "standard"
+      },
+      {
+        "type": "select",
+        "id": "card_image_ratio",
+        "label": "Image ratio",
+        "options": [
+          {
+            "value": "portrait",
+            "label": "Portrait (2:3)"
+          },
+          {
+            "value": "square",
+            "label": "Square (1:1)"
+          },
+          {
+            "value": "landscape",
+            "label": "Landscape (4:3)"
+          },
+          {
+            "value": "adapt",
+            "label": "Adapt to image"
+          }
+        ],
+        "default": "portrait"
+      },
+      {
+        "type": "checkbox",
+        "id": "card_show_secondary_image",
+        "label": "Show second image on hover",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "card_show_vendor",
+        "label": "Show vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "card_show_badge",
+        "label": "Show sale/sold out badges",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "card_show_quick_add",
+        "label": "Show quick add button",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon image",
+        "info": "32x32px .png recommended"
+      }
+    ]
+  }
+]

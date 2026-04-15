@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ 'gift_cards.issued.title' | t }} - {{ shop.name }}</title>
+  {{ 'base.css' | asset_url | stylesheet_tag }}
+  {% style %}
+    :root {
+      --color-primary: {{ settings.color_primary }};
+      --color-accent: {{ settings.color_accent }};
+      --color-background: {{ settings.color_background }};
+      --color-text: {{ settings.color_text }};
+      --color-heading: {{ settings.color_heading }};
+      --font-heading: {{ settings.font_heading.family | default: 'Assistant' }}, {{ settings.font_heading.fallback_families | default: 'sans-serif' }};
+      --font-body: {{ settings.font_body.family | default: 'Assistant' }}, {{ settings.font_body.fallback_families | default: 'sans-serif' }};
+      --btn-primary-bg: {{ settings.btn_primary_bg }};
+      --btn-primary-text: {{ settings.btn_primary_text }};
+      --btn-border-radius: {{ settings.btn_border_radius }}px;
+      --btn-padding: {{ settings.btn_padding_vertical }}px {{ settings.btn_padding_horizontal }}px;
+    }
+  {% endstyle %}
+</head>
+<body style="background: var(--color-background); display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem;">
+  <div style="text-align: center; max-width: 400px;">
+    <h1 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem;">{{ shop.name }}</h1>
+    <p style="color: var(--color-text); margin-bottom: 2rem;">Here's your gift card!</p>
+
+    <div style="background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); border-radius: 12px; padding: 2rem; color: #fff; margin-bottom: 2rem;">
+      <p style="font-size: 0.875rem; opacity: 0.85; margin-bottom: 0.5rem;">Gift Card</p>
+      <p style="font-size: 2.5rem; font-weight: 700; font-family: var(--font-heading);">{{ gift_card.balance | money }}</p>
+      <p style="font-size: 1.125rem; letter-spacing: 0.15em; margin-top: 1.5rem; font-family: monospace;">{{ gift_card.code | format_code }}</p>
+      {%- if gift_card.expired -%}
+        <p style="margin-top: 0.75rem; font-size: 0.8125rem; opacity: 0.85;">Expired on {{ gift_card.expires_on | date: '%B %d, %Y' }}</p>
+      {%- elsif gift_card.expires_on -%}
+        <p style="margin-top: 0.75rem; font-size: 0.8125rem; opacity: 0.85;">Expires on {{ gift_card.expires_on | date: '%B %d, %Y' }}</p>
+      {%- endif -%}
+    </div>
+
+    {%- if gift_card.pass_url -%}
+      <a href="{{ gift_card.pass_url }}" class="btn btn--primary" style="margin-bottom: 1rem; display: inline-flex;">
+        Add to Apple Wallet
+      </a>
+    {%- endif -%}
+
+    <p style="font-size: 0.8125rem; color: var(--color-text);">
+      Use this gift card at checkout on <a href="{{ shop.url }}" style="font-weight: 600;">{{ shop.name }}</a>
+    </p>
+
+    <button onclick="navigator.clipboard.writeText('{{ gift_card.code }}');this.textContent='Copied!'" class="btn btn--secondary" style="margin-top: 1rem;">
+      Copy code
+    </button>
+
+    <a href="{{ shop.url }}" class="btn btn--primary" style="margin-top: 0.5rem; display: inline-flex;">
+      Shop now
+    </a>
+  </div>
+</body>
+</html>

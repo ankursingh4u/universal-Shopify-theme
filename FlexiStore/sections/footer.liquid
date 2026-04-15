@@ -1,0 +1,153 @@
+<footer
+  class="footer"
+  style="--footer-bg: {{ settings.footer_bg }}; --footer-text: {{ settings.footer_text }}; --footer-heading: {{ settings.footer_heading }};"
+>
+  <div class="page-width">
+    <div class="footer__grid">
+      {%- comment -%} About / brand column {%- endcomment -%}
+      <div class="footer__column">
+        <h3 class="footer__heading">{{ shop.name }}</h3>
+        <p style="font-size: 0.875rem; line-height: 1.7;">
+          {%- if section.settings.about_text != blank -%}
+            {{ section.settings.about_text }}
+          {%- else -%}
+            Welcome to {{ shop.name }}. Quality products, curated with care for you.
+          {%- endif -%}
+        </p>
+
+        <div class="footer__social">
+          {% render 'social-icons' %}
+        </div>
+      </div>
+
+      {%- comment -%} Menu columns from blocks {%- endcomment -%}
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'menu' -%}
+            <div class="footer__column" {{ block.shopify_attributes }}>
+              {%- if block.settings.heading != blank -%}
+                <h3 class="footer__heading">{{ block.settings.heading }}</h3>
+              {%- endif -%}
+              {%- if block.settings.menu != blank -%}
+                {%- for link in linklists[block.settings.menu].links -%}
+                  <a href="{{ link.url }}" class="footer__link">{{ link.title }}</a>
+                {%- endfor -%}
+              {%- endif -%}
+            </div>
+
+          {%- when 'text' -%}
+            <div class="footer__column" {{ block.shopify_attributes }}>
+              {%- if block.settings.heading != blank -%}
+                <h3 class="footer__heading">{{ block.settings.heading }}</h3>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <div style="font-size: 0.875rem; line-height: 1.7;">{{ block.settings.text }}</div>
+              {%- endif -%}
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+
+      {%- comment -%} Newsletter column {%- endcomment -%}
+      {%- if settings.footer_newsletter -%}
+        <div class="footer__column">
+          <h3 class="footer__heading">{{ settings.footer_newsletter_heading }}</h3>
+          <p style="font-size: 0.875rem; line-height: 1.7; margin-bottom: 0.5rem;">{{ settings.footer_newsletter_text }}</p>
+          {%- form 'customer', class: 'footer__newsletter-form' -%}
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <input
+              type="email"
+              name="contact[email]"
+              class="field__input"
+              placeholder="{{ 'sections.newsletter.email_placeholder' | t }}"
+              required
+              autocomplete="email"
+            >
+            <button type="submit" class="btn btn--primary">{{ 'sections.newsletter.subscribe' | t }}</button>
+            {%- if form.posted_successfully? -%}
+              <p style="color: #22C55E; font-size: 0.875rem; margin-top: 0.75rem;">Thanks for subscribing!</p>
+            {%- endif -%}
+            {%- if form.errors -%}
+              <p style="color: #EF4444; font-size: 0.875rem; margin-top: 0.75rem;">{{ form.errors.messages['email'] | default: 'Something went wrong. Please try again.' }}</p>
+            {%- endif -%}
+          {%- endform -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. {{ settings.footer_copyright }}</p>
+      <p>{{ powered_by_link }}</p>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "class": "section-footer",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "about_text",
+      "label": "About text",
+      "default": "Quality products, curated with care. We believe in making great design accessible to everyone."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu",
+      "name": "Menu column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Quick links"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "default": "footer"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Info"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Share store details, promotions, or brand content with your customers.</p>"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "menu",
+        "settings": {
+          "heading": "Quick links",
+          "menu": "footer"
+        }
+      },
+      {
+        "type": "menu",
+        "settings": {
+          "heading": "Info",
+          "menu": "footer"
+        }
+      }
+    ]
+  }
+}
+{% endschema %}

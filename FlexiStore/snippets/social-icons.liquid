@@ -1,0 +1,40 @@
+{% comment %}
+  Renders social media icons from theme settings.
+  Usage: {% render 'social-icons' %}
+{% endcomment %}
+
+{%- if settings.social_facebook != blank -%}
+  <a href="{{ settings.social_facebook }}" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+  </a>
+{%- endif -%}
+
+{%- if settings.social_instagram != blank -%}
+  <a href="{{ settings.social_instagram }}" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+  </a>
+{%- endif -%}
+
+{%- if settings.social_twitter != blank -%}
+  <a href="{{ settings.social_twitter }}" class="footer__social-link" aria-label="X (Twitter)" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M4 4l6.7 8.3L4 20h2.3l5.5-6.3L16 20h5l-7-8.7L20.5 4H18l-5 5.7L9 4H4z"/></svg>
+  </a>
+{%- endif -%}
+
+{%- if settings.social_youtube != blank -%}
+  <a href="{{ settings.social_youtube }}" class="footer__social-link" aria-label="YouTube" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"/></svg>
+  </a>
+{%- endif -%}
+
+{%- if settings.social_tiktok != blank -%}
+  <a href="{{ settings.social_tiktok }}" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+{%- endif -%}
+
+{%- if settings.social_pinterest != blank -%}
+  <a href="{{ settings.social_pinterest }}" class="footer__social-link" aria-label="Pinterest" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.25 2.67 7.9 6.44 9.34-.09-.78-.17-1.99.04-2.85.19-.78 1.2-5.08 1.2-5.08s-.31-.61-.31-1.51c0-1.42.82-2.48 1.84-2.48.87 0 1.29.65 1.29 1.44 0 .87-.56 2.18-.84 3.4-.24 1.01.51 1.83 1.5 1.83 1.8 0 3.19-1.9 3.19-4.64 0-2.43-1.74-4.12-4.24-4.12-2.89 0-4.58 2.16-4.58 4.4 0 .87.34 1.81.76 2.31.08.1.09.19.07.29-.08.31-.25 1.01-.29 1.15-.05.19-.16.23-.36.14-1.34-.62-2.18-2.58-2.18-4.16 0-3.38 2.46-6.49 7.09-6.49 3.72 0 6.62 2.65 6.62 6.2 0 3.7-2.33 6.68-5.57 6.68-1.09 0-2.11-.57-2.46-1.23l-.67 2.55c-.24.94-.9 2.11-1.34 2.83A10 10 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+  </a>
+{%- endif -%}

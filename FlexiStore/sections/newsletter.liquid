@@ -1,0 +1,43 @@
+{%- capture niche_nl_heading -%}{%- render 'niche-value', key: 'newsletter_heading' -%}{%- endcapture -%}
+{%- capture niche_nl_sub -%}{%- render 'niche-value', key: 'newsletter_subheading' -%}{%- endcapture -%}
+
+<div class="section{% if section.settings.use_alt_bg %} section--alt{% endif %}">
+  <div class="page-width">
+    <div class="newsletter">
+      <h2>{%- if section.settings.heading != blank -%}{{ section.settings.heading }}{%- else -%}{{ niche_nl_heading }}{%- endif -%}</h2>
+      <p class="subtitle" style="margin: 0.75rem auto 0;">{%- if section.settings.subheading != blank -%}{{ section.settings.subheading }}{%- else -%}{{ niche_nl_sub }}{%- endif -%}</p>
+
+      {%- form 'customer', class: 'newsletter__form' -%}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <input type="email" name="contact[email]" class="field__input" placeholder="{{ 'sections.newsletter.email_placeholder' | t }}" required autocomplete="email" aria-label="{{ 'sections.newsletter.email_placeholder' | t }}">
+        <button type="submit" class="btn btn--primary">{{ 'sections.newsletter.subscribe' | t }}</button>
+      {%- endform -%}
+      {%- if form.posted_successfully? -%}
+        <p style="color: #22C55E; font-size: 0.9375rem; margin-top: 1rem; font-weight: 600;">Thanks for subscribing!</p>
+      {%- endif -%}
+      {%- if form.errors -%}
+        <p style="color: #EF4444; font-size: 0.9375rem; margin-top: 1rem;">{{ form.errors.messages['email'] | default: 'Something went wrong. Please try again.' }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.disclaimer != blank -%}
+        <p class="text-light" style="font-size: 0.75rem; margin-top: 0.75rem;">{{ section.settings.disclaimer }}</p>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Newsletter",
+  "tag": "section",
+  "class": "section-newsletter",
+  "settings": [
+    { "type": "paragraph", "content": "Leave blank to auto-fill based on your store niche." },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "text", "id": "subheading", "label": "Subheading" },
+    { "type": "text", "id": "disclaimer", "label": "Disclaimer text", "default": "By subscribing, you agree to our privacy policy. Unsubscribe anytime." },
+    { "type": "checkbox", "id": "use_alt_bg", "label": "Use alternate background color", "default": false }
+  ],
+  "presets": [{ "name": "Newsletter" }]
+}
+{% endschema %}

@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "columns": "3",
+        "articles_per_page": 6,
+        "show_author": true,
+        "show_excerpt": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

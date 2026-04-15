@@ -1,0 +1,58 @@
+<div class="section">
+  <div class="page-width">
+    <a href="{{ routes.account_url }}" style="font-size: 0.875rem; margin-bottom: 1rem; display: inline-block;">&larr; Back to account</a>
+    <h1 style="margin-bottom: 2rem;">Your Addresses</h1>
+
+    <a href="#" onclick="document.getElementById('AddressNewForm').style.display='block';this.style.display='none';return false;" class="btn btn--primary btn--small" style="margin-bottom: 2rem;">
+      Add new address
+    </a>
+
+    <div id="AddressNewForm" style="display: none; margin-bottom: 2rem; padding: 1.5rem; border: 1px solid var(--color-border); border-radius: var(--btn-border-radius);">
+      <h2 class="h3" style="margin-bottom: 1rem;">New Address</h2>
+      {%- form 'customer_address', customer.new_address -%}
+        {% render 'address-form', form: form %}
+        <div style="display: flex; gap: 0.75rem; margin-top: 1rem;">
+          <button type="submit" class="btn btn--primary">Save</button>
+          <button type="button" class="btn btn--secondary" onclick="document.getElementById('AddressNewForm').style.display='none';">Cancel</button>
+        </div>
+      {%- endform -%}
+    </div>
+
+    {%- for address in customer.addresses -%}
+      <div style="padding: 1.5rem 0; border-bottom: 1px solid var(--color-border);">
+        <div style="display: flex; justify-content: space-between; align-items: start; gap: 1rem;">
+          <div style="line-height: 1.6;">
+            {{ address | format_address }}
+            {%- if address == customer.default_address -%}
+              <span style="display: inline-block; margin-top: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-accent);">Default</span>
+            {%- endif -%}
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-shrink: 0;">
+            <button type="button" class="btn btn--secondary btn--small" onclick="document.getElementById('EditAddress{{ address.id }}').style.display='block';">Edit</button>
+            {%- form 'customer_address', address -%}
+              <input type="hidden" name="_method" value="delete">
+              <button type="submit" class="btn btn--secondary btn--small" style="color: var(--color-accent);">Delete</button>
+            {%- endform -%}
+          </div>
+        </div>
+        <div id="EditAddress{{ address.id }}" style="display: none; margin-top: 1rem;">
+          {%- form 'customer_address', address -%}
+            {% render 'address-form', form: form %}
+            <div style="display: flex; gap: 0.75rem; margin-top: 1rem;">
+              <button type="submit" class="btn btn--primary btn--small">Update</button>
+              <button type="button" class="btn btn--secondary btn--small" onclick="this.closest('[id^=EditAddress]').style.display='none';">Cancel</button>
+            </div>
+          {%- endform -%}
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Customer addresses",
+  "tag": "section",
+  "settings": []
+}
+{% endschema %}

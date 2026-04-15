@@ -1,0 +1,66 @@
+{% comment %}
+  Renders address form fields.
+  Accepts: form (form object)
+{% endcomment %}
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+  <div class="field">
+    <label class="field__label" for="{{ form.id }}_first_name">First name</label>
+    <input type="text" id="{{ form.id }}_first_name" name="address[first_name]" class="field__input" value="{{ form.first_name }}" autocomplete="given-name">
+  </div>
+  <div class="field">
+    <label class="field__label" for="{{ form.id }}_last_name">Last name</label>
+    <input type="text" id="{{ form.id }}_last_name" name="address[last_name]" class="field__input" value="{{ form.last_name }}" autocomplete="family-name">
+  </div>
+</div>
+
+<div class="field" style="margin-top: 1rem;">
+  <label class="field__label" for="{{ form.id }}_company">Company (optional)</label>
+  <input type="text" id="{{ form.id }}_company" name="address[company]" class="field__input" value="{{ form.company }}" autocomplete="organization">
+</div>
+
+<div class="field" style="margin-top: 1rem;">
+  <label class="field__label" for="{{ form.id }}_address1">Address</label>
+  <input type="text" id="{{ form.id }}_address1" name="address[address1]" class="field__input" value="{{ form.address1 }}" autocomplete="address-line1" required>
+</div>
+
+<div class="field" style="margin-top: 1rem;">
+  <label class="field__label" for="{{ form.id }}_address2">Apartment, suite, etc. (optional)</label>
+  <input type="text" id="{{ form.id }}_address2" name="address[address2]" class="field__input" value="{{ form.address2 }}" autocomplete="address-line2">
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+  <div class="field">
+    <label class="field__label" for="{{ form.id }}_city">City</label>
+    <input type="text" id="{{ form.id }}_city" name="address[city]" class="field__input" value="{{ form.city }}" autocomplete="address-level2" required>
+  </div>
+  <div class="field">
+    <label class="field__label" for="{{ form.id }}_country">Country</label>
+    <select id="{{ form.id }}_country" name="address[country]" class="field__input" autocomplete="country" data-default="{{ form.country }}">
+      {{ all_country_option_tags }}
+    </select>
+  </div>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+  <div class="field">
+    <label class="field__label" for="{{ form.id }}_province">Province / State</label>
+    <select id="{{ form.id }}_province" name="address[province]" class="field__input" autocomplete="address-level1" data-default="{{ form.province }}"></select>
+  </div>
+  <div class="field">
+    <label class="field__label" for="{{ form.id }}_zip">Postal / ZIP code</label>
+    <input type="text" id="{{ form.id }}_zip" name="address[zip]" class="field__input" value="{{ form.zip }}" autocomplete="postal-code">
+  </div>
+</div>
+
+<div class="field" style="margin-top: 1rem;">
+  <label class="field__label" for="{{ form.id }}_phone">Phone (optional)</label>
+  <input type="tel" id="{{ form.id }}_phone" name="address[phone]" class="field__input" value="{{ form.phone }}" autocomplete="tel">
+</div>
+
+<div style="margin-top: 1rem;">
+  <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem;">
+    <input type="checkbox" name="address[default]" value="1"{% if form == customer.default_address %} checked{% endif %}>
+    Set as default address
+  </label>
+</div>

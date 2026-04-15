@@ -1,0 +1,20 @@
+<div class="section">
+  <div class="page-width">
+    <div class="page-404">
+      <h1 class="page-404__title">{{ 'templates.404.title' | t }}</h1>
+      <p class="page-404__text">{{ 'templates.404.subtext' | t }}</p>
+      <a href="{{ routes.root_url }}" class="btn btn--primary">
+        {{ 'templates.404.link' | t }}
+      </a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "404 page",
+  "tag": "section",
+  "class": "section-404",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,187 @@
+Handle,Title,Body (HTML),Vendor,Product Category,Type,Tags,Published,Option1 Name,Option1 Value,Option2 Name,Option2 Value,Option3 Name,Option3 Value,Variant SKU,Variant Grams,Variant Inventory Tracker,Variant Inventory Policy,Variant Fulfillment Service,Variant Price,Variant Compare At Price,Variant Requires Shipping,Variant Taxable,Image Src,Image Position,Image Alt Text,Gift Card,SEO Title,SEO Description,Status
+classic-fit-cotton-t-shirt,Classic Fit Cotton T-Shirt,<p>Ultra-soft premium cotton t-shirt. Breathable and perfect for everyday wear.</p>,FlexiStyle,,Tops,"fashion, clothing, women, tops, cotton, best-sellers",true,Color,White,Size,S,,,CLASSIC-001,200,shopify,deny,manual,29.99,39.99,true,true,https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop,1,Classic Fit Cotton T-Shirt,false,Classic Fit Cotton T-Shirt,Ultra-soft premium cotton t-shirt. Breathable and perfect for everyday wear.,active
+classic-fit-cotton-t-shirt,,,,,,,true,Color,White,Size,M,,,CLASSIC-002,200,shopify,deny,manual,29.99,39.99,true,true,,,,false,,,active
+classic-fit-cotton-t-shirt,,,,,,,true,Color,White,Size,L,,,CLASSIC-003,200,shopify,deny,manual,29.99,39.99,true,true,,,,false,,,active
+classic-fit-cotton-t-shirt,,,,,,,true,Color,White,Size,XL,,,CLASSIC-004,200,shopify,deny,manual,29.99,39.99,true,true,,,,false,,,active
+classic-fit-cotton-t-shirt,,,,,,,true,Color,Black,Size,S,,,CLASSIC-005,200,shopify,deny,manual,29.99,39.99,true,true,,,,false,,,active
+classic-fit-cotton-t-shirt,,,,,,,true,Color,Black,Size,M,,,CLASSIC-006,200,shopify,deny,manual,29.99,39.99,true,true,,,,false,,,active
+classic-fit-cotton-t-shirt,,,,,,,true,Color,Black,Size,L,,,CLASSIC-007,200,shopify,deny,manual,29.99,39.99,true,true,,,,false,,,active
+classic-fit-cotton-t-shirt,,,,,,,true,Color,Black,Size,XL,,,CLASSIC-008,200,shopify,deny,manual,29.99,39.99,true,true,,,,false,,,active
+classic-fit-cotton-t-shirt,,,,,,,true,Color,Navy,Size,S,,,CLASSIC-009,200,shopify,deny,manual,29.99,39.99,true,true,,,,false,,,active
+classic-fit-cotton-t-shirt,,,,,,,true,Color,Navy,Size,M,,,CLASSIC-010,200,shopify,deny,manual,29.99,39.99,true,true,,,,false,,,active
+classic-fit-cotton-t-shirt,,,,,,,true,Color,Navy,Size,L,,,CLASSIC-011,200,shopify,deny,manual,29.99,39.99,true,true,,,,false,,,active
+classic-fit-cotton-t-shirt,,,,,,,true,Color,Navy,Size,XL,,,CLASSIC-012,200,shopify,deny,manual,29.99,39.99,true,true,,,,false,,,active
+slim-fit-denim-jeans,Slim Fit Denim Jeans,<p>Premium stretch denim jeans with modern slim fit for all-day comfort.</p>,FlexiStyle,,Bottoms,"fashion, clothing, women, jeans, denim, sale",true,Color,Blue,Size,28,,,SLIMFIT-001,200,shopify,deny,manual,59.99,79.99,true,true,https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&h=800&fit=crop,1,Slim Fit Denim Jeans,false,Slim Fit Denim Jeans,Premium stretch denim jeans with modern slim fit for all-day comfort.,active
+slim-fit-denim-jeans,,,,,,,true,Color,Blue,Size,30,,,SLIMFIT-002,200,shopify,deny,manual,59.99,79.99,true,true,,,,false,,,active
+slim-fit-denim-jeans,,,,,,,true,Color,Blue,Size,32,,,SLIMFIT-003,200,shopify,deny,manual,59.99,79.99,true,true,,,,false,,,active
+slim-fit-denim-jeans,,,,,,,true,Color,Blue,Size,34,,,SLIMFIT-004,200,shopify,deny,manual,59.99,79.99,true,true,,,,false,,,active
+slim-fit-denim-jeans,,,,,,,true,Color,Black,Size,28,,,SLIMFIT-005,200,shopify,deny,manual,59.99,79.99,true,true,,,,false,,,active
+slim-fit-denim-jeans,,,,,,,true,Color,Black,Size,30,,,SLIMFIT-006,200,shopify,deny,manual,59.99,79.99,true,true,,,,false,,,active
+slim-fit-denim-jeans,,,,,,,true,Color,Black,Size,32,,,SLIMFIT-007,200,shopify,deny,manual,59.99,79.99,true,true,,,,false,,,active
+slim-fit-denim-jeans,,,,,,,true,Color,Black,Size,34,,,SLIMFIT-008,200,shopify,deny,manual,59.99,79.99,true,true,,,,false,,,active
+floral-print-maxi-dress,Floral Print Maxi Dress,<p>Elegant floral maxi dress with flowing silhouette. Perfect for events or date nights.</p>,FlexiStyle,,Dresses,"fashion, clothing, women, dresses, floral, summer, new-arrivals",true,Color,Rose,Size,S,,,FLORALP-001,200,shopify,deny,manual,69.99,,true,true,https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&h=800&fit=crop,1,Floral Print Maxi Dress,false,Floral Print Maxi Dress,Elegant floral maxi dress with flowing silhouette. Perfect for events or date nights.,active
+floral-print-maxi-dress,,,,,,,true,Color,Rose,Size,M,,,FLORALP-002,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+floral-print-maxi-dress,,,,,,,true,Color,Rose,Size,L,,,FLORALP-003,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+floral-print-maxi-dress,,,,,,,true,Color,Sky Blue,Size,S,,,FLORALP-004,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+floral-print-maxi-dress,,,,,,,true,Color,Sky Blue,Size,M,,,FLORALP-005,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+floral-print-maxi-dress,,,,,,,true,Color,Sky Blue,Size,L,,,FLORALP-006,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+leather-crossbody-bag,Leather Crossbody Bag,<p>Genuine leather crossbody bag with adjustable strap and gold hardware.</p>,FlexiStyle,,Accessories,"fashion, clothing, accessories, bags, leather, sale",true,Color,Tan,,,,,LEATHER-001,200,shopify,deny,manual,49.99,65.00,true,true,https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&h=800&fit=crop,1,Leather Crossbody Bag,false,Leather Crossbody Bag,Genuine leather crossbody bag with adjustable strap and gold hardware.,active
+leather-crossbody-bag,,,,,,,true,Color,Black,,,,,LEATHER-002,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+leather-crossbody-bag,,,,,,,true,Color,Burgundy,,,,,LEATHER-003,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+oversized-knit-sweater,Oversized Knit Sweater,"<p>Cozy oversized chunky cable-knit sweater. Warm, soft, and endlessly stylish.</p>",FlexiStyle,,Tops,"fashion, clothing, women, tops, knitwear, winter",true,Color,Cream,Size,S/M,,,OVERSIZE-001,200,shopify,deny,manual,54.99,,true,true,https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&h=800&fit=crop,1,Oversized Knit Sweater,false,Oversized Knit Sweater,"Cozy oversized chunky cable-knit sweater. Warm, soft, and endlessly stylish.",active
+oversized-knit-sweater,,,,,,,true,Color,Cream,Size,L/XL,,,OVERSIZE-002,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+oversized-knit-sweater,,,,,,,true,Color,Grey,Size,S/M,,,OVERSIZE-003,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+oversized-knit-sweater,,,,,,,true,Color,Grey,Size,L/XL,,,OVERSIZE-004,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+oversized-knit-sweater,,,,,,,true,Color,Olive,Size,S/M,,,OVERSIZE-005,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+oversized-knit-sweater,,,,,,,true,Color,Olive,Size,L/XL,,,OVERSIZE-006,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+tailored-chino-pants,Tailored Chino Pants,<p>Sharp tailored chinos with modern fit. Office to weekend versatility.</p>,FlexiStyle,,Bottoms,"fashion, clothing, men, pants, chinos, sale",true,Color,Khaki,Size,30,,,TAILORED-001,200,shopify,deny,manual,44.99,55.00,true,true,https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&h=800&fit=crop,1,Tailored Chino Pants,false,Tailored Chino Pants,Sharp tailored chinos with modern fit. Office to weekend versatility.,active
+tailored-chino-pants,,,,,,,true,Color,Khaki,Size,32,,,TAILORED-002,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+tailored-chino-pants,,,,,,,true,Color,Khaki,Size,34,,,TAILORED-003,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+tailored-chino-pants,,,,,,,true,Color,Khaki,Size,36,,,TAILORED-004,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+tailored-chino-pants,,,,,,,true,Color,Navy,Size,30,,,TAILORED-005,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+tailored-chino-pants,,,,,,,true,Color,Navy,Size,32,,,TAILORED-006,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+tailored-chino-pants,,,,,,,true,Color,Navy,Size,34,,,TAILORED-007,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+tailored-chino-pants,,,,,,,true,Color,Navy,Size,36,,,TAILORED-008,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+tailored-chino-pants,,,,,,,true,Color,Charcoal,Size,30,,,TAILORED-009,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+tailored-chino-pants,,,,,,,true,Color,Charcoal,Size,32,,,TAILORED-010,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+tailored-chino-pants,,,,,,,true,Color,Charcoal,Size,34,,,TAILORED-011,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+tailored-chino-pants,,,,,,,true,Color,Charcoal,Size,36,,,TAILORED-012,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+oxford-button-down-shirt,Oxford Button-Down Shirt,<p>Timeless oxford button-down in crisp cotton. Every man needs this.</p>,FlexiStyle,,Tops,"fashion, clothing, men, shirts, oxford, best-sellers",true,Color,White,Size,S,,,OXFORDB-001,200,shopify,deny,manual,39.99,,true,true,https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&h=800&fit=crop,1,Oxford Button-Down Shirt,false,Oxford Button-Down Shirt,Timeless oxford button-down in crisp cotton. Every man needs this.,active
+oxford-button-down-shirt,,,,,,,true,Color,White,Size,M,,,OXFORDB-002,200,shopify,deny,manual,39.99,,true,true,,,,false,,,active
+oxford-button-down-shirt,,,,,,,true,Color,White,Size,L,,,OXFORDB-003,200,shopify,deny,manual,39.99,,true,true,,,,false,,,active
+oxford-button-down-shirt,,,,,,,true,Color,White,Size,XL,,,OXFORDB-004,200,shopify,deny,manual,39.99,,true,true,,,,false,,,active
+oxford-button-down-shirt,,,,,,,true,Color,Light Blue,Size,S,,,OXFORDB-005,200,shopify,deny,manual,39.99,,true,true,,,,false,,,active
+oxford-button-down-shirt,,,,,,,true,Color,Light Blue,Size,M,,,OXFORDB-006,200,shopify,deny,manual,39.99,,true,true,,,,false,,,active
+oxford-button-down-shirt,,,,,,,true,Color,Light Blue,Size,L,,,OXFORDB-007,200,shopify,deny,manual,39.99,,true,true,,,,false,,,active
+oxford-button-down-shirt,,,,,,,true,Color,Light Blue,Size,XL,,,OXFORDB-008,200,shopify,deny,manual,39.99,,true,true,,,,false,,,active
+oxford-button-down-shirt,,,,,,,true,Color,Pink,Size,S,,,OXFORDB-009,200,shopify,deny,manual,39.99,,true,true,,,,false,,,active
+oxford-button-down-shirt,,,,,,,true,Color,Pink,Size,M,,,OXFORDB-010,200,shopify,deny,manual,39.99,,true,true,,,,false,,,active
+oxford-button-down-shirt,,,,,,,true,Color,Pink,Size,L,,,OXFORDB-011,200,shopify,deny,manual,39.99,,true,true,,,,false,,,active
+oxford-button-down-shirt,,,,,,,true,Color,Pink,Size,XL,,,OXFORDB-012,200,shopify,deny,manual,39.99,,true,true,,,,false,,,active
+minimalist-leather-watch,Minimalist Leather Watch,<p>Sleek minimalist watch with leather strap and stainless steel case.</p>,FlexiStyle,,Accessories,"fashion, clothing, accessories, watches, leather, sale",true,Color,Brown/Gold,,,,,MINIMALI-001,200,shopify,deny,manual,89.99,120.00,true,true,https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&h=800&fit=crop,1,Minimalist Leather Watch,false,Minimalist Leather Watch,Sleek minimalist watch with leather strap and stainless steel case.,active
+minimalist-leather-watch,,,,,,,true,Color,Black/Silver,,,,,MINIMALI-002,200,shopify,deny,manual,89.99,120.00,true,true,,,,false,,,active
+silk-scarf-collection,Silk Scarf Collection,<p>Luxurious pure silk scarf with hand-rolled edges. Instant elegance.</p>,FlexiStyle,,Accessories,"fashion, clothing, accessories, scarves, silk",true,Color,Floral,,,,,SILKSCA-001,200,shopify,deny,manual,34.99,,true,true,https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&h=800&fit=crop,1,Silk Scarf Collection,false,Silk Scarf Collection,Luxurious pure silk scarf with hand-rolled edges. Instant elegance.,active
+silk-scarf-collection,,,,,,,true,Color,Geometric,,,,,SILKSCA-002,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+silk-scarf-collection,,,,,,,true,Color,Abstract,,,,,SILKSCA-003,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+high-rise-wide-leg-trousers,High-Rise Wide Leg Trousers,<p>Sophisticated high-rise wide leg trousers with flattering drape.</p>,FlexiStyle,,Bottoms,"fashion, clothing, women, pants, wide-leg, sale, new-arrivals",true,Color,Black,Size,S,,,HIGHRIS-001,200,shopify,deny,manual,64.99,80.00,true,true,https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&h=800&fit=crop,1,High-Rise Wide Leg Trousers,false,High-Rise Wide Leg Trousers,Sophisticated high-rise wide leg trousers with flattering drape.,active
+high-rise-wide-leg-trousers,,,,,,,true,Color,Black,Size,M,,,HIGHRIS-002,200,shopify,deny,manual,64.99,80.00,true,true,,,,false,,,active
+high-rise-wide-leg-trousers,,,,,,,true,Color,Black,Size,L,,,HIGHRIS-003,200,shopify,deny,manual,64.99,80.00,true,true,,,,false,,,active
+high-rise-wide-leg-trousers,,,,,,,true,Color,Black,Size,XL,,,HIGHRIS-004,200,shopify,deny,manual,64.99,80.00,true,true,,,,false,,,active
+high-rise-wide-leg-trousers,,,,,,,true,Color,Camel,Size,S,,,HIGHRIS-005,200,shopify,deny,manual,64.99,80.00,true,true,,,,false,,,active
+high-rise-wide-leg-trousers,,,,,,,true,Color,Camel,Size,M,,,HIGHRIS-006,200,shopify,deny,manual,64.99,80.00,true,true,,,,false,,,active
+high-rise-wide-leg-trousers,,,,,,,true,Color,Camel,Size,L,,,HIGHRIS-007,200,shopify,deny,manual,64.99,80.00,true,true,,,,false,,,active
+high-rise-wide-leg-trousers,,,,,,,true,Color,Camel,Size,XL,,,HIGHRIS-008,200,shopify,deny,manual,64.99,80.00,true,true,,,,false,,,active
+linen-blend-blazer,Linen Blend Blazer,<p>Relaxed linen blend blazer for effortless layering. Structured yet breathable.</p>,FlexiStyle,,Outerwear,"fashion, clothing, women, outerwear, blazer, linen, new-arrivals",true,Color,Sand,Size,S,,,LINENBL-001,200,shopify,deny,manual,89.99,,true,true,https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=800&h=800&fit=crop,1,Linen Blend Blazer,false,Linen Blend Blazer,Relaxed linen blend blazer for effortless layering. Structured yet breathable.,active
+linen-blend-blazer,,,,,,,true,Color,Sand,Size,M,,,LINENBL-002,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+linen-blend-blazer,,,,,,,true,Color,Sand,Size,L,,,LINENBL-003,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+linen-blend-blazer,,,,,,,true,Color,White,Size,S,,,LINENBL-004,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+linen-blend-blazer,,,,,,,true,Color,White,Size,M,,,LINENBL-005,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+linen-blend-blazer,,,,,,,true,Color,White,Size,L,,,LINENBL-006,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+linen-blend-blazer,,,,,,,true,Color,Black,Size,S,,,LINENBL-007,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+linen-blend-blazer,,,,,,,true,Color,Black,Size,M,,,LINENBL-008,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+linen-blend-blazer,,,,,,,true,Color,Black,Size,L,,,LINENBL-009,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+graphic-print-hoodie,Graphic Print Hoodie,<p>Premium heavyweight hoodie with original graphic print. Streetwear essential.</p>,FlexiStyle,,Tops,"fashion, clothing, men, tops, hoodie, streetwear, sale",true,Color,Black,Size,S,,,GRAPHIC-001,200,shopify,deny,manual,44.99,52.00,true,true,https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=800&fit=crop,1,Graphic Print Hoodie,false,Graphic Print Hoodie,Premium heavyweight hoodie with original graphic print. Streetwear essential.,active
+graphic-print-hoodie,,,,,,,true,Color,Black,Size,M,,,GRAPHIC-002,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,Black,Size,L,,,GRAPHIC-003,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,Black,Size,XL,,,GRAPHIC-004,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,Black,Size,XXL,,,GRAPHIC-005,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,Grey,Size,S,,,GRAPHIC-006,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,Grey,Size,M,,,GRAPHIC-007,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,Grey,Size,L,,,GRAPHIC-008,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,Grey,Size,XL,,,GRAPHIC-009,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,Grey,Size,XXL,,,GRAPHIC-010,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,White,Size,S,,,GRAPHIC-011,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,White,Size,M,,,GRAPHIC-012,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,White,Size,L,,,GRAPHIC-013,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,White,Size,XL,,,GRAPHIC-014,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+graphic-print-hoodie,,,,,,,true,Color,White,Size,XXL,,,GRAPHIC-015,200,shopify,deny,manual,44.99,52.00,true,true,,,,false,,,active
+pleated-midi-skirt,Pleated Midi Skirt,<p>Flowing pleated midi skirt in satin finish. Moves beautifully with every step.</p>,FlexiStyle,,Bottoms,"fashion, clothing, women, skirts, midi, elegant",true,Color,Champagne,Size,S,,,PLEATED-001,200,shopify,deny,manual,49.99,,true,true,https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=800&h=800&fit=crop,1,Pleated Midi Skirt,false,Pleated Midi Skirt,Flowing pleated midi skirt in satin finish. Moves beautifully with every step.,active
+pleated-midi-skirt,,,,,,,true,Color,Champagne,Size,M,,,PLEATED-002,200,shopify,deny,manual,49.99,,true,true,,,,false,,,active
+pleated-midi-skirt,,,,,,,true,Color,Champagne,Size,L,,,PLEATED-003,200,shopify,deny,manual,49.99,,true,true,,,,false,,,active
+pleated-midi-skirt,,,,,,,true,Color,Black,Size,S,,,PLEATED-004,200,shopify,deny,manual,49.99,,true,true,,,,false,,,active
+pleated-midi-skirt,,,,,,,true,Color,Black,Size,M,,,PLEATED-005,200,shopify,deny,manual,49.99,,true,true,,,,false,,,active
+pleated-midi-skirt,,,,,,,true,Color,Black,Size,L,,,PLEATED-006,200,shopify,deny,manual,49.99,,true,true,,,,false,,,active
+pleated-midi-skirt,,,,,,,true,Color,Emerald,Size,S,,,PLEATED-007,200,shopify,deny,manual,49.99,,true,true,,,,false,,,active
+pleated-midi-skirt,,,,,,,true,Color,Emerald,Size,M,,,PLEATED-008,200,shopify,deny,manual,49.99,,true,true,,,,false,,,active
+pleated-midi-skirt,,,,,,,true,Color,Emerald,Size,L,,,PLEATED-009,200,shopify,deny,manual,49.99,,true,true,,,,false,,,active
+men-s-slim-fit-suit,Men's Slim Fit Suit,<p>Modern slim fit two-piece suit in premium wool blend. Tailored to impress.</p>,FlexiStyle,,Suits,"fashion, clothing, men, suits, formal, best-sellers, sale",true,Color,Navy,Size,38R,,,MENSSL-001,200,shopify,deny,manual,199.99,260.00,true,true,https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&h=800&fit=crop,1,Men's Slim Fit Suit,false,Men's Slim Fit Suit,Modern slim fit two-piece suit in premium wool blend. Tailored to impress.,active
+men-s-slim-fit-suit,,,,,,,true,Color,Navy,Size,40R,,,MENSSL-002,200,shopify,deny,manual,199.99,260.00,true,true,,,,false,,,active
+men-s-slim-fit-suit,,,,,,,true,Color,Navy,Size,42R,,,MENSSL-003,200,shopify,deny,manual,199.99,260.00,true,true,,,,false,,,active
+men-s-slim-fit-suit,,,,,,,true,Color,Navy,Size,44R,,,MENSSL-004,200,shopify,deny,manual,199.99,260.00,true,true,,,,false,,,active
+men-s-slim-fit-suit,,,,,,,true,Color,Charcoal,Size,38R,,,MENSSL-005,200,shopify,deny,manual,199.99,260.00,true,true,,,,false,,,active
+men-s-slim-fit-suit,,,,,,,true,Color,Charcoal,Size,40R,,,MENSSL-006,200,shopify,deny,manual,199.99,260.00,true,true,,,,false,,,active
+men-s-slim-fit-suit,,,,,,,true,Color,Charcoal,Size,42R,,,MENSSL-007,200,shopify,deny,manual,199.99,260.00,true,true,,,,false,,,active
+men-s-slim-fit-suit,,,,,,,true,Color,Charcoal,Size,44R,,,MENSSL-008,200,shopify,deny,manual,199.99,260.00,true,true,,,,false,,,active
+men-s-slim-fit-suit,,,,,,,true,Color,Black,Size,38R,,,MENSSL-009,200,shopify,deny,manual,199.99,260.00,true,true,,,,false,,,active
+men-s-slim-fit-suit,,,,,,,true,Color,Black,Size,40R,,,MENSSL-010,200,shopify,deny,manual,199.99,260.00,true,true,,,,false,,,active
+men-s-slim-fit-suit,,,,,,,true,Color,Black,Size,42R,,,MENSSL-011,200,shopify,deny,manual,199.99,260.00,true,true,,,,false,,,active
+men-s-slim-fit-suit,,,,,,,true,Color,Black,Size,44R,,,MENSSL-012,200,shopify,deny,manual,199.99,260.00,true,true,,,,false,,,active
+cashmere-v-neck-sweater,Cashmere V-Neck Sweater,<p>Pure cashmere v-neck sweater. Incredibly soft and warm for cold weather.</p>,FlexiStyle,,Tops,"fashion, clothing, men, tops, cashmere, winter, best-sellers",true,Color,Camel,Size,S,,,CASHMERE-001,200,shopify,deny,manual,79.99,,true,true,https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&h=800&fit=crop,1,Cashmere V-Neck Sweater,false,Cashmere V-Neck Sweater,Pure cashmere v-neck sweater. Incredibly soft and warm for cold weather.,active
+cashmere-v-neck-sweater,,,,,,,true,Color,Camel,Size,M,,,CASHMERE-002,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+cashmere-v-neck-sweater,,,,,,,true,Color,Camel,Size,L,,,CASHMERE-003,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+cashmere-v-neck-sweater,,,,,,,true,Color,Camel,Size,XL,,,CASHMERE-004,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+cashmere-v-neck-sweater,,,,,,,true,Color,Navy,Size,S,,,CASHMERE-005,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+cashmere-v-neck-sweater,,,,,,,true,Color,Navy,Size,M,,,CASHMERE-006,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+cashmere-v-neck-sweater,,,,,,,true,Color,Navy,Size,L,,,CASHMERE-007,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+cashmere-v-neck-sweater,,,,,,,true,Color,Navy,Size,XL,,,CASHMERE-008,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+cashmere-v-neck-sweater,,,,,,,true,Color,Burgundy,Size,S,,,CASHMERE-009,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+cashmere-v-neck-sweater,,,,,,,true,Color,Burgundy,Size,M,,,CASHMERE-010,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+cashmere-v-neck-sweater,,,,,,,true,Color,Burgundy,Size,L,,,CASHMERE-011,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+cashmere-v-neck-sweater,,,,,,,true,Color,Burgundy,Size,XL,,,CASHMERE-012,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,Crop Top Ribbed Knit,<p>Fitted ribbed knit crop top. Layer it or wear it solo for a modern look.</p>,FlexiStyle,,Tops,"fashion, clothing, women, tops, crop-top, casual, new-arrivals",true,Color,White,Size,XS,,,CROPTOP-001,200,shopify,deny,manual,24.99,,true,true,https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop,1,Crop Top Ribbed Knit,false,Crop Top Ribbed Knit,Fitted ribbed knit crop top. Layer it or wear it solo for a modern look.,active
+crop-top-ribbed-knit,,,,,,,true,Color,White,Size,S,,,CROPTOP-002,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,White,Size,M,,,CROPTOP-003,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,White,Size,L,,,CROPTOP-004,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,Black,Size,XS,,,CROPTOP-005,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,Black,Size,S,,,CROPTOP-006,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,Black,Size,M,,,CROPTOP-007,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,Black,Size,L,,,CROPTOP-008,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,Mocha,Size,XS,,,CROPTOP-009,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,Mocha,Size,S,,,CROPTOP-010,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,Mocha,Size,M,,,CROPTOP-011,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,Mocha,Size,L,,,CROPTOP-012,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,Sage,Size,XS,,,CROPTOP-013,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,Sage,Size,S,,,CROPTOP-014,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,Sage,Size,M,,,CROPTOP-015,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+crop-top-ribbed-knit,,,,,,,true,Color,Sage,Size,L,,,CROPTOP-016,200,shopify,deny,manual,24.99,,true,true,,,,false,,,active
+cargo-jogger-pants,Cargo Jogger Pants,<p>Relaxed cargo joggers with side pockets and elastic cuffs. Comfort meets utility.</p>,FlexiStyle,,Bottoms,"fashion, clothing, men, pants, joggers, streetwear, casual, sale",true,Color,Olive,Size,S,,,CARGOJO-001,200,shopify,deny,manual,42.99,50.00,true,true,https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&h=800&fit=crop,1,Cargo Jogger Pants,false,Cargo Jogger Pants,Relaxed cargo joggers with side pockets and elastic cuffs. Comfort meets utility.,active
+cargo-jogger-pants,,,,,,,true,Color,Olive,Size,M,,,CARGOJO-002,200,shopify,deny,manual,42.99,50.00,true,true,,,,false,,,active
+cargo-jogger-pants,,,,,,,true,Color,Olive,Size,L,,,CARGOJO-003,200,shopify,deny,manual,42.99,50.00,true,true,,,,false,,,active
+cargo-jogger-pants,,,,,,,true,Color,Olive,Size,XL,,,CARGOJO-004,200,shopify,deny,manual,42.99,50.00,true,true,,,,false,,,active
+cargo-jogger-pants,,,,,,,true,Color,Black,Size,S,,,CARGOJO-005,200,shopify,deny,manual,42.99,50.00,true,true,,,,false,,,active
+cargo-jogger-pants,,,,,,,true,Color,Black,Size,M,,,CARGOJO-006,200,shopify,deny,manual,42.99,50.00,true,true,,,,false,,,active
+cargo-jogger-pants,,,,,,,true,Color,Black,Size,L,,,CARGOJO-007,200,shopify,deny,manual,42.99,50.00,true,true,,,,false,,,active
+cargo-jogger-pants,,,,,,,true,Color,Black,Size,XL,,,CARGOJO-008,200,shopify,deny,manual,42.99,50.00,true,true,,,,false,,,active
+cargo-jogger-pants,,,,,,,true,Color,Khaki,Size,S,,,CARGOJO-009,200,shopify,deny,manual,42.99,50.00,true,true,,,,false,,,active
+cargo-jogger-pants,,,,,,,true,Color,Khaki,Size,M,,,CARGOJO-010,200,shopify,deny,manual,42.99,50.00,true,true,,,,false,,,active
+cargo-jogger-pants,,,,,,,true,Color,Khaki,Size,L,,,CARGOJO-011,200,shopify,deny,manual,42.99,50.00,true,true,,,,false,,,active
+cargo-jogger-pants,,,,,,,true,Color,Khaki,Size,XL,,,CARGOJO-012,200,shopify,deny,manual,42.99,50.00,true,true,,,,false,,,active
+satin-wrap-dress,Satin Wrap Dress,<p>Luxurious satin wrap dress with a flattering tie waist. From dinner to dancing.</p>,FlexiStyle,,Dresses,"fashion, clothing, women, dresses, satin, evening, new-arrivals",true,Color,Wine,Size,S,,,SATINWR-001,200,shopify,deny,manual,74.99,,true,true,https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&h=800&fit=crop,1,Satin Wrap Dress,false,Satin Wrap Dress,Luxurious satin wrap dress with a flattering tie waist. From dinner to dancing.,active
+satin-wrap-dress,,,,,,,true,Color,Wine,Size,M,,,SATINWR-002,200,shopify,deny,manual,74.99,,true,true,,,,false,,,active
+satin-wrap-dress,,,,,,,true,Color,Wine,Size,L,,,SATINWR-003,200,shopify,deny,manual,74.99,,true,true,,,,false,,,active
+satin-wrap-dress,,,,,,,true,Color,Black,Size,S,,,SATINWR-004,200,shopify,deny,manual,74.99,,true,true,,,,false,,,active
+satin-wrap-dress,,,,,,,true,Color,Black,Size,M,,,SATINWR-005,200,shopify,deny,manual,74.99,,true,true,,,,false,,,active
+satin-wrap-dress,,,,,,,true,Color,Black,Size,L,,,SATINWR-006,200,shopify,deny,manual,74.99,,true,true,,,,false,,,active
+satin-wrap-dress,,,,,,,true,Color,Emerald,Size,S,,,SATINWR-007,200,shopify,deny,manual,74.99,,true,true,,,,false,,,active
+satin-wrap-dress,,,,,,,true,Color,Emerald,Size,M,,,SATINWR-008,200,shopify,deny,manual,74.99,,true,true,,,,false,,,active
+satin-wrap-dress,,,,,,,true,Color,Emerald,Size,L,,,SATINWR-009,200,shopify,deny,manual,74.99,,true,true,,,,false,,,active
+denim-trucker-jacket,Denim Trucker Jacket,<p>Classic denim trucker jacket with vintage wash. Timeless layering piece.</p>,FlexiStyle,,Outerwear,"fashion, clothing, unisex, outerwear, denim, jacket, best-sellers, sale",true,Color,Light Wash,Size,S,,,DENIMTR-001,200,shopify,deny,manual,64.99,78.00,true,true,https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=800&h=800&fit=crop,1,Denim Trucker Jacket,false,Denim Trucker Jacket,Classic denim trucker jacket with vintage wash. Timeless layering piece.,active
+denim-trucker-jacket,,,,,,,true,Color,Light Wash,Size,M,,,DENIMTR-002,200,shopify,deny,manual,64.99,78.00,true,true,,,,false,,,active
+denim-trucker-jacket,,,,,,,true,Color,Light Wash,Size,L,,,DENIMTR-003,200,shopify,deny,manual,64.99,78.00,true,true,,,,false,,,active
+denim-trucker-jacket,,,,,,,true,Color,Light Wash,Size,XL,,,DENIMTR-004,200,shopify,deny,manual,64.99,78.00,true,true,,,,false,,,active
+denim-trucker-jacket,,,,,,,true,Color,Dark Wash,Size,S,,,DENIMTR-005,200,shopify,deny,manual,64.99,78.00,true,true,,,,false,,,active
+denim-trucker-jacket,,,,,,,true,Color,Dark Wash,Size,M,,,DENIMTR-006,200,shopify,deny,manual,64.99,78.00,true,true,,,,false,,,active
+denim-trucker-jacket,,,,,,,true,Color,Dark Wash,Size,L,,,DENIMTR-007,200,shopify,deny,manual,64.99,78.00,true,true,,,,false,,,active
+denim-trucker-jacket,,,,,,,true,Color,Dark Wash,Size,XL,,,DENIMTR-008,200,shopify,deny,manual,64.99,78.00,true,true,,,,false,,,active
+denim-trucker-jacket,,,,,,,true,Color,Black,Size,S,,,DENIMTR-009,200,shopify,deny,manual,64.99,78.00,true,true,,,,false,,,active
+denim-trucker-jacket,,,,,,,true,Color,Black,Size,M,,,DENIMTR-010,200,shopify,deny,manual,64.99,78.00,true,true,,,,false,,,active
+denim-trucker-jacket,,,,,,,true,Color,Black,Size,L,,,DENIMTR-011,200,shopify,deny,manual,64.99,78.00,true,true,,,,false,,,active
+denim-trucker-jacket,,,,,,,true,Color,Black,Size,XL,,,DENIMTR-012,200,shopify,deny,manual,64.99,78.00,true,true,,,,false,,,active
+leather-belt,Leather Belt,<p>Genuine leather belt with brushed nickel buckle. The finishing touch.</p>,FlexiStyle,,Accessories,"fashion, clothing, accessories, belts, leather, men",true,Color,Brown,Size,32,,,LEATHER-001,200,shopify,deny,manual,29.99,,true,true,https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=800&fit=crop,1,Leather Belt,false,Leather Belt,Genuine leather belt with brushed nickel buckle. The finishing touch.,active
+leather-belt,,,,,,,true,Color,Brown,Size,34,,,LEATHER-002,200,shopify,deny,manual,29.99,,true,true,,,,false,,,active
+leather-belt,,,,,,,true,Color,Brown,Size,36,,,LEATHER-003,200,shopify,deny,manual,29.99,,true,true,,,,false,,,active
+leather-belt,,,,,,,true,Color,Brown,Size,38,,,LEATHER-004,200,shopify,deny,manual,29.99,,true,true,,,,false,,,active
+leather-belt,,,,,,,true,Color,Black,Size,32,,,LEATHER-005,200,shopify,deny,manual,29.99,,true,true,,,,false,,,active
+leather-belt,,,,,,,true,Color,Black,Size,34,,,LEATHER-006,200,shopify,deny,manual,29.99,,true,true,,,,false,,,active
+leather-belt,,,,,,,true,Color,Black,Size,36,,,LEATHER-007,200,shopify,deny,manual,29.99,,true,true,,,,false,,,active
+leather-belt,,,,,,,true,Color,Black,Size,38,,,LEATHER-008,200,shopify,deny,manual,29.99,,true,true,,,,false,,,active

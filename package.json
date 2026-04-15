@@ -1,0 +1,16 @@
+{
+  "name": "flexistore-theme",
+  "version": "1.0.0",
+  "description": "FlexiStore - Universal Shopify theme with 13 niche presets",
+  "scripts": {
+    "build": "node build.js",
+    "generate": "node generate-csv.js",
+    "generate:all": "node generate-csv.js all"
+  },
+  "keywords": ["shopify", "theme", "ecommerce", "niche", "multi-purpose"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^7.0.1"
+  }
+}

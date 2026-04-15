@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "show_featured_image": true,
+        "show_author": true,
+        "show_tags": true,
+        "show_comments": true
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "heading": "Subscribe to our newsletter",
+        "subheading": "Get the latest articles and updates delivered to your inbox.",
+        "use_alt_bg": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "newsletter"
+  ]
+}

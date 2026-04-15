@@ -1,0 +1,116 @@
+<div class="section">
+  <div class="page-width">
+    <article>
+      <div class="article__header">
+        <p class="article__meta">
+          {{ article.published_at | date: '%B %d, %Y' }}
+          {%- if section.settings.show_author %} &middot; {{ article.author }}{% endif -%}
+        </p>
+        <h1 class="article__title">{{ article.title | escape }}</h1>
+      </div>
+
+      {%- if article.image and section.settings.show_featured_image -%}
+        <div class="article__featured-image">
+          <img
+            src="{{ article.image | image_url: width: 1200 }}"
+            alt="{{ article.image.alt | escape }}"
+            loading="eager"
+            width="1200"
+            height="{{ 1200 | divided_by: article.image.aspect_ratio | round }}"
+          >
+        </div>
+      {%- endif -%}
+
+      <div class="article__content">
+        {{ article.content }}
+      </div>
+
+      {%- if section.settings.show_tags and article.tags.size > 0 -%}
+        <div style="margin-top: 2rem; max-width: 720px; margin-left: auto; margin-right: auto;">
+          <p style="font-weight: 600; margin-bottom: 0.5rem;">{{ 'blogs.article.tags' | t }}:</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            {%- for tag in article.tags -%}
+              <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="collection__filter-tag">{{ tag }}</a>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+      <div style="margin-top: 2rem; max-width: 720px; margin-left: auto; margin-right: auto;">
+        <a href="{{ blog.url }}" style="font-weight: 600; font-size: 0.9375rem;">
+          &larr; {{ 'blogs.article.back_to_blog' | t }}
+        </a>
+      </div>
+
+      {%- if blog.comments_enabled? and section.settings.show_comments -%}
+        <div style="margin-top: 3rem; max-width: 720px; margin-left: auto; margin-right: auto;">
+          <h2 class="h3">{{ 'blogs.article.comments.title' | t }} ({{ article.comments_count }})</h2>
+
+          {%- if article.comments.size > 0 -%}
+            {%- for comment in article.comments -%}
+              <div style="padding: 1.25rem 0; border-bottom: 1px solid var(--color-border);">
+                <p style="font-weight: 600; font-size: 0.9375rem;">{{ comment.author }}</p>
+                <p style="font-size: 0.75rem; color: var(--color-text-light); margin-bottom: 0.5rem;">{{ comment.created_at | date: '%B %d, %Y' }}</p>
+                <div style="font-size: 0.9375rem; line-height: 1.6;">{{ comment.content }}</div>
+              </div>
+            {%- endfor -%}
+          {%- else -%}
+            <p class="text-light" style="margin-top: 1rem;">{{ 'blogs.article.comments.none' | t }}</p>
+          {%- endif -%}
+
+          {%- form 'new_comment', article -%}
+            <div style="margin-top: 2rem; display: grid; gap: 1rem;">
+              <div class="field">
+                <label class="field__label" for="comment-author">{{ 'blogs.article.comments.name' | t }}</label>
+                <input type="text" id="comment-author" name="comment[author]" class="field__input" required>
+              </div>
+              <div class="field">
+                <label class="field__label" for="comment-email">{{ 'blogs.article.comments.email' | t }}</label>
+                <input type="email" id="comment-email" name="comment[email]" class="field__input" required>
+              </div>
+              <div class="field">
+                <label class="field__label" for="comment-body">{{ 'blogs.article.comments.message' | t }}</label>
+                <textarea id="comment-body" name="comment[body]" class="field__input" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">{{ 'blogs.article.comments.submit' | t }}</button>
+            </div>
+          {%- endform -%}
+        </div>
+      {%- endif -%}
+    </article>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Article page",
+  "tag": "section",
+  "class": "section-article",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_featured_image",
+      "label": "Show featured image",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show author",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tags",
+      "label": "Show tags",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_comments",
+      "label": "Show comments",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

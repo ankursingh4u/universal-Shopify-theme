@@ -1,0 +1,63 @@
+{%- capture niche_t1_text -%}{%- render 'niche-value', key: 'testimonial_1_text' -%}{%- endcapture -%}
+{%- capture niche_t1_author -%}{%- render 'niche-value', key: 'testimonial_1_author' -%}{%- endcapture -%}
+{%- capture niche_t2_text -%}{%- render 'niche-value', key: 'testimonial_2_text' -%}{%- endcapture -%}
+{%- capture niche_t2_author -%}{%- render 'niche-value', key: 'testimonial_2_author' -%}{%- endcapture -%}
+{%- capture niche_t3_text -%}{%- render 'niche-value', key: 'testimonial_3_text' -%}{%- endcapture -%}
+{%- capture niche_t3_author -%}{%- render 'niche-value', key: 'testimonial_3_author' -%}{%- endcapture -%}
+
+<div class="section{% if section.settings.use_alt_bg %} section--alt{% endif %}">
+  <div class="page-width">
+    <div class="section-header{% if section.settings.heading_alignment == 'center' %} text-center{% endif %}">
+      <h2>{%- if section.settings.heading != blank -%}{{ section.settings.heading }}{%- else -%}What our customers say{%- endif -%}</h2>
+    </div>
+
+    <div class="testimonials__grid" style="grid-template-columns: repeat({{ section.settings.columns }}, 1fr);">
+      {%- if section.blocks.size > 0 -%}
+        {%- for block in section.blocks -%}
+          <div class="testimonial" {{ block.shopify_attributes }}>
+            {%- if block.settings.rating > 0 -%}<div class="testimonial__stars">{%- for i in (1..block.settings.rating) -%}{% render 'icon-star' %}{%- endfor -%}</div>{%- endif -%}
+            {%- if block.settings.text != blank -%}<p class="testimonial__text">"{{ block.settings.text }}"</p>{%- endif -%}
+            {%- if block.settings.author != blank -%}<p class="testimonial__author">{{ block.settings.author }}</p>{%- endif -%}
+          </div>
+        {%- endfor -%}
+      {%- else -%}
+        <div class="testimonial">
+          <div class="testimonial__stars">{%- for i in (1..5) -%}{% render 'icon-star' %}{%- endfor -%}</div>
+          <p class="testimonial__text">"{{ niche_t1_text }}"</p>
+          <p class="testimonial__author">{{ niche_t1_author }}</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars">{%- for i in (1..5) -%}{% render 'icon-star' %}{%- endfor -%}</div>
+          <p class="testimonial__text">"{{ niche_t2_text }}"</p>
+          <p class="testimonial__author">{{ niche_t2_author }}</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars">{%- for i in (1..5) -%}{% render 'icon-star' %}{%- endfor -%}</div>
+          <p class="testimonial__text">"{{ niche_t3_text }}"</p>
+          <p class="testimonial__author">{{ niche_t3_author }}</p>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "tag": "section",
+  "class": "section-testimonials",
+  "settings": [
+    { "type": "paragraph", "content": "Leave blocks empty to auto-fill based on your store niche." },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "select", "id": "heading_alignment", "label": "Heading alignment", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Center" }], "default": "center" },
+    { "type": "select", "id": "columns", "label": "Columns", "options": [{ "value": "2", "label": "2" }, { "value": "3", "label": "3" }], "default": "3" },
+    { "type": "checkbox", "id": "use_alt_bg", "label": "Use alternate background color", "default": false }
+  ],
+  "blocks": [{ "type": "testimonial", "name": "Testimonial", "settings": [
+    { "type": "range", "id": "rating", "label": "Star rating", "min": 0, "max": 5, "step": 1, "default": 5 },
+    { "type": "textarea", "id": "text", "label": "Review text", "default": "This store exceeded my expectations." },
+    { "type": "text", "id": "author", "label": "Author name", "default": "Happy Customer" }
+  ]}],
+  "presets": [{ "name": "Testimonials" }]
+}
+{% endschema %}

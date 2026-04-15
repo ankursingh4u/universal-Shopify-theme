@@ -1,0 +1,103 @@
+<div class="section">
+  <div class="page-width">
+    <div class="section-header">
+      <h1>{{ blog.title | escape }}</h1>
+    </div>
+
+    <div class="blog__grid grid--{{ section.settings.columns }}">
+      {%- paginate blog.articles by section.settings.articles_per_page -%}
+        {%- for article in blog.articles -%}
+          <div class="article-card">
+            {%- if article.image -%}
+              <div class="article-card__media">
+                <a href="{{ article.url }}">
+                  <img
+                    src="{{ article.image | image_url: width: 600 }}"
+                    alt="{{ article.image.alt | escape }}"
+                    loading="lazy"
+                    width="600"
+                    height="{{ 600 | divided_by: article.image.aspect_ratio | round }}"
+                  >
+                </a>
+              </div>
+            {%- endif -%}
+            <div class="article-card__content">
+              <p class="article-card__meta">
+                {{ article.published_at | date: '%B %d, %Y' }}
+                {%- if section.settings.show_author %} &middot; {{ article.author }}{% endif -%}
+              </p>
+              <h2 class="article-card__title">
+                <a href="{{ article.url }}">{{ article.title | escape }}</a>
+              </h2>
+              {%- if section.settings.show_excerpt and article.excerpt_or_content != blank -%}
+                <p class="article-card__excerpt">{{ article.excerpt_or_content | strip_html | truncatewords: 25 }}</p>
+              {%- endif -%}
+              <a href="{{ article.url }}" style="font-size: 0.875rem; font-weight: 600; margin-top: 0.5rem; display: inline-block;">
+                {{ 'blogs.article.read_more' | t }} &rarr;
+              </a>
+            </div>
+          </div>
+        {%- endfor -%}
+
+        {%- if paginate.pages > 1 -%}
+          <div class="collection__pagination" style="grid-column: 1 / -1;">
+            {%- if paginate.previous -%}
+              <a href="{{ paginate.previous.url }}">&laquo;</a>
+            {%- endif -%}
+            {%- for part in paginate.parts -%}
+              {%- if part.is_link -%}
+                <a href="{{ part.url }}">{{ part.title }}</a>
+              {%- else -%}
+                <span class="is-current">{{ part.title }}</span>
+              {%- endif -%}
+            {%- endfor -%}
+            {%- if paginate.next -%}
+              <a href="{{ paginate.next.url }}">&raquo;</a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endpaginate -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog page",
+  "tag": "section",
+  "class": "section-blog",
+  "settings": [
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Columns",
+      "options": [
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "range",
+      "id": "articles_per_page",
+      "label": "Articles per page",
+      "min": 3,
+      "max": 12,
+      "step": 3,
+      "default": 6
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show author",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_excerpt",
+      "label": "Show excerpt",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

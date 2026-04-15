@@ -1,0 +1,54 @@
+<div class="section">
+  <div class="page-width">
+    <div style="max-width: 450px; margin: 0 auto; text-align: center;">
+      <h1 style="margin-bottom: 2rem;">Login</h1>
+
+      {%- form 'customer_login' -%}
+        {%- if form.errors -%}
+          <div style="background: #FEE2E2; color: #B91C1C; padding: 0.75rem 1rem; border-radius: var(--btn-border-radius); margin-bottom: 1.5rem; font-size: 0.875rem;">
+            {{ form.errors | default_errors }}
+          </div>
+        {%- endif -%}
+
+        <div class="field" style="margin-bottom: 1rem; text-align: left;">
+          <label class="field__label" for="CustomerEmail">Email</label>
+          <input type="email" id="CustomerEmail" name="customer[email]" class="field__input" autocomplete="email" required>
+        </div>
+
+        <div class="field" style="margin-bottom: 1.5rem; text-align: left;">
+          <label class="field__label" for="CustomerPassword">Password</label>
+          <input type="password" id="CustomerPassword" name="customer[password]" class="field__input" autocomplete="current-password" required>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full">Sign in</button>
+
+        <p style="margin-top: 1rem; font-size: 0.875rem;">
+          <a href="#recover" style="text-decoration: underline;">Forgot your password?</a>
+        </p>
+
+        <p style="margin-top: 1.5rem; font-size: 0.875rem; color: var(--color-text-light);">
+          Don't have an account? <a href="{{ routes.account_register_url }}" style="font-weight: 600;">Create account</a>
+        </p>
+      {%- endform -%}
+
+      <div id="recover" style="display: none; margin-top: 2rem;">
+        <h2 class="h3" style="margin-bottom: 1rem;">Reset your password</h2>
+        {%- form 'recover_customer_password' -%}
+          <div class="field" style="margin-bottom: 1rem; text-align: left;">
+            <label class="field__label" for="RecoverEmail">Email</label>
+            <input type="email" id="RecoverEmail" name="email" class="field__input" autocomplete="email" required>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Submit</button>
+        {%- endform -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Customer login",
+  "tag": "section",
+  "settings": []
+}
+{% endschema %}

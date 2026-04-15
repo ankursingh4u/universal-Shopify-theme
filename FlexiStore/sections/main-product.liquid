@@ -1,0 +1,220 @@
+<div class="section">
+  <div class="page-width">
+    <div class="product">
+      {%- comment -%} ---- Gallery ---- {%- endcomment -%}
+      <div class="product__gallery">
+        <div class="product__gallery-main">
+          {%- if product.featured_image -%}
+            <img
+              data-product-main-image
+              src="{{ product.featured_image | image_url: width: 900 }}"
+              alt="{{ product.featured_image.alt | escape }}"
+              loading="eager"
+              width="900"
+              height="{{ 900 | divided_by: product.featured_image.aspect_ratio | round }}"
+            >
+          {%- else -%}
+            {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+
+        {%- if product.images.size > 1 -%}
+          <div class="product__gallery-thumbs">
+            {%- for image in product.images -%}
+              <button
+                class="product__gallery-thumb{% if forloop.first %} is-active{% endif %}"
+                data-gallery-thumb="{{ image | image_url: width: 900 }}"
+                aria-label="View image {{ forloop.index }}"
+              >
+                <img
+                  src="{{ image | image_url: width: 160 }}"
+                  alt="{{ image.alt | escape }}"
+                  loading="lazy"
+                  width="80"
+                  height="80"
+                >
+              </button>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      {%- comment -%} ---- Product Info ---- {%- endcomment -%}
+      <div class="product__info">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+
+            {%- when 'vendor' -%}
+              {%- if product.vendor != blank -%}
+                <p class="product__vendor" {{ block.shopify_attributes }}>{{ product.vendor }}</p>
+              {%- endif -%}
+
+            {%- when 'title' -%}
+              <h1 class="product__title" {{ block.shopify_attributes }}>{{ product.title | escape }}</h1>
+
+            {%- when 'price' -%}
+              <div class="product__price" {{ block.shopify_attributes }}>
+                <span data-product-price>{{ product.selected_or_first_available_variant.price | money }}</span>
+                {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+                  <span class="product__price-compare" data-product-compare-price>
+                    {{ product.selected_or_first_available_variant.compare_at_price | money }}
+                  </span>
+                  {%- assign discount = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | times: 100 | divided_by: product.selected_or_first_available_variant.compare_at_price -%}
+                  <span class="product__price-badge" data-product-price-badge>-{{ discount }}%</span>
+                {%- else -%}
+                  <span class="product__price-compare" data-product-compare-price style="display:none;"></span>
+                  <span class="product__price-badge" data-product-price-badge style="display:none;"></span>
+                {%- endif -%}
+              </div>
+
+            {%- when 'variant_selector' -%}
+              {%- unless product.has_only_default_variant -%}
+                <div class="product__variants" {{ block.shopify_attributes }}>
+                  {%- for option in product.options_with_values -%}
+                    <div class="product__variant-group" data-option-group>
+                      <span class="product__variant-label">{{ option.name }}</span>
+                      <div class="product__variant-options">
+                        {%- for value in option.values -%}
+                          <button
+                            type="button"
+                            class="product__variant-option{% if option.selected_value == value %} is-selected{% endif %}"
+                            data-variant-option="{{ value }}"
+                          >
+                            {{ value }}
+                          </button>
+                        {%- endfor -%}
+                      </div>
+                    </div>
+                  {%- endfor -%}
+                </div>
+              {%- endunless -%}
+
+            {%- when 'quantity_selector' -%}
+              <div class="product__quantity" {{ block.shopify_attributes }}>
+                <button class="product__quantity-btn" data-qty-minus aria-label="{{ 'accessibility.decrease_quantity' | t }}">-</button>
+                <input
+                  type="number"
+                  class="product__quantity-input"
+                  name="quantity"
+                  value="1"
+                  min="1"
+                  data-qty-input
+                  aria-label="{{ 'products.product.quantity' | t }}"
+                >
+                <button class="product__quantity-btn" data-qty-plus aria-label="{{ 'accessibility.increase_quantity' | t }}">+</button>
+              </div>
+
+            {%- when 'buy_buttons' -%}
+              <div {{ block.shopify_attributes }}>
+                {%- form 'product', product, data-product-form: '' -%}
+                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+                  <button
+                    type="submit"
+                    class="btn btn--primary btn--large product__add-to-cart"
+                    data-add-to-cart
+                    {% unless product.selected_or_first_available_variant.available %}disabled{% endunless %}
+                  >
+                    <span data-add-to-cart-text>
+                      {%- if product.selected_or_first_available_variant.available -%}
+                        {{ 'products.product.add_to_cart' | t }}
+                      {%- else -%}
+                        {{ 'products.product.sold_out' | t }}
+                      {%- endif -%}
+                    </span>
+                  </button>
+
+                  {%- if block.settings.show_dynamic_checkout -%}
+                    {{ form | payment_button }}
+                  {%- endif -%}
+                {%- endform -%}
+              </div>
+
+            {%- when 'description' -%}
+              {%- if product.description != blank -%}
+                <div class="product__description" {{ block.shopify_attributes }}>
+                  {{ product.description }}
+                </div>
+              {%- endif -%}
+
+            {%- when 'share' -%}
+              <div {{ block.shopify_attributes }} style="margin-top: 1rem;">
+                <button
+                  class="btn btn--secondary btn--small"
+                  onclick="navigator.share ? navigator.share({title: '{{ product.title | escape }}', url: '{{ product.url | prepend: shop.url }}'}) : navigator.clipboard.writeText('{{ product.url | prepend: shop.url }}')"
+                >
+                  {{ 'general.share' | t }}
+                </button>
+              </div>
+
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+
+    {%- comment -%} Product JSON for variant switching {%- endcomment -%}
+    <script type="application/json" data-product-json>
+      {{ product | json }}
+    </script>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product page",
+  "tag": "section",
+  "class": "section-product",
+  "blocks": [
+    {
+      "type": "vendor",
+      "name": "Vendor",
+      "limit": 1
+    },
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1
+    },
+    {
+      "type": "price",
+      "name": "Price",
+      "limit": 1
+    },
+    {
+      "type": "variant_selector",
+      "name": "Variant selector",
+      "limit": 1
+    },
+    {
+      "type": "quantity_selector",
+      "name": "Quantity selector",
+      "limit": 1
+    },
+    {
+      "type": "buy_buttons",
+      "name": "Buy buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_dynamic_checkout",
+          "label": "Show dynamic checkout button",
+          "default": true,
+          "info": "Displays a checkout button with the customer's preferred payment method (e.g., Apple Pay, Google Pay)."
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "limit": 1
+    },
+    {
+      "type": "share",
+      "name": "Share button",
+      "limit": 1
+    }
+  ],
+  "settings": []
+}
+{% endschema %}

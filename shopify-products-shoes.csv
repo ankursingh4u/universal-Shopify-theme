@@ -1,0 +1,374 @@
+Handle,Title,Body (HTML),Vendor,Product Category,Type,Tags,Published,Option1 Name,Option1 Value,Option2 Name,Option2 Value,Option3 Name,Option3 Value,Variant SKU,Variant Grams,Variant Inventory Tracker,Variant Inventory Policy,Variant Fulfillment Service,Variant Price,Variant Compare At Price,Variant Requires Shipping,Variant Taxable,Image Src,Image Position,Image Alt Text,Gift Card,SEO Title,SEO Description,Status
+urban-runner-sneakers,Urban Runner Sneakers,<p>Lightweight running sneakers with cushioned sole and breathable mesh upper for all-day comfort.</p>,FlexiStep,,Sneakers,"shoes, footwear, sneakers, running, men, sale, best-sellers",true,Color,White,Size,8,,,URBANRU-001,200,shopify,deny,manual,79.99,99.99,true,true,https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=800&fit=crop,1,Urban Runner Sneakers,false,Urban Runner Sneakers,Lightweight running sneakers with cushioned sole and breathable mesh upper for all-day comfort.,active
+urban-runner-sneakers,,,,,,,true,Color,White,Size,9,,,URBANRU-002,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,White,Size,10,,,URBANRU-003,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,White,Size,11,,,URBANRU-004,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,White,Size,12,,,URBANRU-005,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,Black,Size,8,,,URBANRU-006,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,Black,Size,9,,,URBANRU-007,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,Black,Size,10,,,URBANRU-008,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,Black,Size,11,,,URBANRU-009,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,Black,Size,12,,,URBANRU-010,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,Grey,Size,8,,,URBANRU-011,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,Grey,Size,9,,,URBANRU-012,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,Grey,Size,10,,,URBANRU-013,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,Grey,Size,11,,,URBANRU-014,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+urban-runner-sneakers,,,,,,,true,Color,Grey,Size,12,,,URBANRU-015,200,shopify,deny,manual,79.99,99.99,true,true,,,,false,,,active
+canvas-low-top-sneakers,Canvas Low-Top Sneakers,<p>Classic canvas low-top sneakers with vulcanized rubber sole. A timeless casual staple.</p>,FlexiStep,,Sneakers,"shoes, footwear, sneakers, canvas, unisex, casual, sale",true,Color,White,Size,6,,,CANVASL-001,200,shopify,deny,manual,49.99,65.00,true,true,https://images.unsplash.com/photo-1552346154-21d32810aba3?w=800&h=800&fit=crop,1,Canvas Low-Top Sneakers,false,Canvas Low-Top Sneakers,Classic canvas low-top sneakers with vulcanized rubber sole. A timeless casual staple.,active
+canvas-low-top-sneakers,,,,,,,true,Color,White,Size,7,,,CANVASL-002,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,White,Size,8,,,CANVASL-003,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,White,Size,9,,,CANVASL-004,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,White,Size,10,,,CANVASL-005,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,White,Size,11,,,CANVASL-006,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,Navy,Size,6,,,CANVASL-007,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,Navy,Size,7,,,CANVASL-008,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,Navy,Size,8,,,CANVASL-009,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,Navy,Size,9,,,CANVASL-010,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,Navy,Size,10,,,CANVASL-011,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,Navy,Size,11,,,CANVASL-012,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,Red,Size,6,,,CANVASL-013,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,Red,Size,7,,,CANVASL-014,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,Red,Size,8,,,CANVASL-015,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,Red,Size,9,,,CANVASL-016,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,Red,Size,10,,,CANVASL-017,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+canvas-low-top-sneakers,,,,,,,true,Color,Red,Size,11,,,CANVASL-018,200,shopify,deny,manual,49.99,65.00,true,true,,,,false,,,active
+sport-performance-trainers,Sport Performance Trainers,<p>High-performance training shoes with responsive cushioning and superior grip for intense workouts.</p>,FlexiStep,,Sneakers,"shoes, footwear, sneakers, sports, men, gym, best-sellers",true,Color,Black/Red,Size,8,,,SPORTPE-001,200,shopify,deny,manual,89.99,,true,true,https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=800&fit=crop,1,Sport Performance Trainers,false,Sport Performance Trainers,High-performance training shoes with responsive cushioning and superior grip for intense workouts.,active
+sport-performance-trainers,,,,,,,true,Color,Black/Red,Size,9,,,SPORTPE-002,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+sport-performance-trainers,,,,,,,true,Color,Black/Red,Size,10,,,SPORTPE-003,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+sport-performance-trainers,,,,,,,true,Color,Black/Red,Size,11,,,SPORTPE-004,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+sport-performance-trainers,,,,,,,true,Color,Black/Red,Size,12,,,SPORTPE-005,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+sport-performance-trainers,,,,,,,true,Color,White/Blue,Size,8,,,SPORTPE-006,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+sport-performance-trainers,,,,,,,true,Color,White/Blue,Size,9,,,SPORTPE-007,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+sport-performance-trainers,,,,,,,true,Color,White/Blue,Size,10,,,SPORTPE-008,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+sport-performance-trainers,,,,,,,true,Color,White/Blue,Size,11,,,SPORTPE-009,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+sport-performance-trainers,,,,,,,true,Color,White/Blue,Size,12,,,SPORTPE-010,200,shopify,deny,manual,89.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,Knit Slip-On Sneakers,<p>Ultra-light knit slip-on sneakers with memory foam insole. Like walking on clouds.</p>,FlexiStep,,Sneakers,"shoes, footwear, sneakers, knit, women, slip-on, casual",true,Color,Blush,Size,5,,,KNITSLI-001,200,shopify,deny,manual,59.99,,true,true,https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&h=800&fit=crop,1,Knit Slip-On Sneakers,false,Knit Slip-On Sneakers,Ultra-light knit slip-on sneakers with memory foam insole. Like walking on clouds.,active
+knit-slip-on-sneakers,,,,,,,true,Color,Blush,Size,6,,,KNITSLI-002,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Blush,Size,7,,,KNITSLI-003,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Blush,Size,8,,,KNITSLI-004,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Blush,Size,9,,,KNITSLI-005,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Grey,Size,5,,,KNITSLI-006,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Grey,Size,6,,,KNITSLI-007,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Grey,Size,7,,,KNITSLI-008,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Grey,Size,8,,,KNITSLI-009,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Grey,Size,9,,,KNITSLI-010,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Black,Size,5,,,KNITSLI-011,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Black,Size,6,,,KNITSLI-012,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Black,Size,7,,,KNITSLI-013,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Black,Size,8,,,KNITSLI-014,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+knit-slip-on-sneakers,,,,,,,true,Color,Black,Size,9,,,KNITSLI-015,200,shopify,deny,manual,59.99,,true,true,,,,false,,,active
+retro-high-top-sneakers,Retro High-Top Sneakers,<p>Vintage-inspired high-top sneakers with padded collar and retro colorways. Street style essential.</p>,FlexiStep,,Sneakers,"shoes, footwear, sneakers, high-top, unisex, retro, new-arrivals",true,Color,White/Red,Size,6,,,RETROHI-001,200,shopify,deny,manual,74.99,90.00,true,true,https://images.unsplash.com/photo-1607522370275-f14206abe5d3?w=800&h=800&fit=crop,1,Retro High-Top Sneakers,false,Retro High-Top Sneakers,Vintage-inspired high-top sneakers with padded collar and retro colorways. Street style essential.,active
+retro-high-top-sneakers,,,,,,,true,Color,White/Red,Size,7,,,RETROHI-002,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,White/Red,Size,8,,,RETROHI-003,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,White/Red,Size,9,,,RETROHI-004,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,White/Red,Size,10,,,RETROHI-005,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,White/Red,Size,11,,,RETROHI-006,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,White/Red,Size,12,,,RETROHI-007,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Black/White,Size,6,,,RETROHI-008,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Black/White,Size,7,,,RETROHI-009,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Black/White,Size,8,,,RETROHI-010,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Black/White,Size,9,,,RETROHI-011,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Black/White,Size,10,,,RETROHI-012,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Black/White,Size,11,,,RETROHI-013,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Black/White,Size,12,,,RETROHI-014,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Navy/Gold,Size,6,,,RETROHI-015,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Navy/Gold,Size,7,,,RETROHI-016,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Navy/Gold,Size,8,,,RETROHI-017,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Navy/Gold,Size,9,,,RETROHI-018,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Navy/Gold,Size,10,,,RETROHI-019,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Navy/Gold,Size,11,,,RETROHI-020,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+retro-high-top-sneakers,,,,,,,true,Color,Navy/Gold,Size,12,,,RETROHI-021,200,shopify,deny,manual,74.99,90.00,true,true,,,,false,,,active
+lightweight-walking-shoes,Lightweight Walking Shoes,<p>Feather-light walking shoes with arch support and flexible sole. Perfect for daily wear and travel.</p>,FlexiStep,,Sneakers,"shoes, footwear, sneakers, walking, unisex, comfort, best-sellers",true,Color,Grey,Size,6,,,LIGHTWEI-001,200,shopify,deny,manual,64.99,,true,true,https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&h=800&fit=crop,1,Lightweight Walking Shoes,false,Lightweight Walking Shoes,Feather-light walking shoes with arch support and flexible sole. Perfect for daily wear and travel.,active
+lightweight-walking-shoes,,,,,,,true,Color,Grey,Size,7,,,LIGHTWEI-002,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,Grey,Size,8,,,LIGHTWEI-003,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,Grey,Size,9,,,LIGHTWEI-004,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,Grey,Size,10,,,LIGHTWEI-005,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,Grey,Size,11,,,LIGHTWEI-006,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,Navy,Size,6,,,LIGHTWEI-007,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,Navy,Size,7,,,LIGHTWEI-008,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,Navy,Size,8,,,LIGHTWEI-009,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,Navy,Size,9,,,LIGHTWEI-010,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,Navy,Size,10,,,LIGHTWEI-011,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,Navy,Size,11,,,LIGHTWEI-012,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,White,Size,6,,,LIGHTWEI-013,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,White,Size,7,,,LIGHTWEI-014,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,White,Size,8,,,LIGHTWEI-015,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,White,Size,9,,,LIGHTWEI-016,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,White,Size,10,,,LIGHTWEI-017,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+lightweight-walking-shoes,,,,,,,true,Color,White,Size,11,,,LIGHTWEI-018,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+kids-velcro-sneakers,Kids Velcro Sneakers,"<p>Easy on-off velcro sneakers for kids. Durable, colorful, and built for play.</p>",FlexiStep,,Sneakers,"shoes, footwear, sneakers, kids, velcro, casual",true,Color,Blue/Green,Size,10C,,,KIDSVEL-001,200,shopify,deny,manual,34.99,42.00,true,true,https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=800&h=800&fit=crop,1,Kids Velcro Sneakers,false,Kids Velcro Sneakers,"Easy on-off velcro sneakers for kids. Durable, colorful, and built for play.",active
+kids-velcro-sneakers,,,,,,,true,Color,Blue/Green,Size,11C,,,KIDSVEL-002,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Blue/Green,Size,12C,,,KIDSVEL-003,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Blue/Green,Size,13C,,,KIDSVEL-004,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Blue/Green,Size,1Y,,,KIDSVEL-005,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Blue/Green,Size,2Y,,,KIDSVEL-006,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Blue/Green,Size,3Y,,,KIDSVEL-007,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Pink/Purple,Size,10C,,,KIDSVEL-008,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Pink/Purple,Size,11C,,,KIDSVEL-009,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Pink/Purple,Size,12C,,,KIDSVEL-010,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Pink/Purple,Size,13C,,,KIDSVEL-011,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Pink/Purple,Size,1Y,,,KIDSVEL-012,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Pink/Purple,Size,2Y,,,KIDSVEL-013,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Pink/Purple,Size,3Y,,,KIDSVEL-014,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Black/Red,Size,10C,,,KIDSVEL-015,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Black/Red,Size,11C,,,KIDSVEL-016,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Black/Red,Size,12C,,,KIDSVEL-017,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Black/Red,Size,13C,,,KIDSVEL-018,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Black/Red,Size,1Y,,,KIDSVEL-019,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Black/Red,Size,2Y,,,KIDSVEL-020,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+kids-velcro-sneakers,,,,,,,true,Color,Black/Red,Size,3Y,,,KIDSVEL-021,200,shopify,deny,manual,34.99,42.00,true,true,,,,false,,,active
+platform-chunky-sneakers,Platform Chunky Sneakers,<p>Bold chunky platform sneakers with extra-thick sole. Add height and attitude to any outfit.</p>,FlexiStep,,Sneakers,"shoes, footwear, sneakers, platform, women, trendy, new-arrivals",true,Color,White,Size,5,,,PLATFORM-001,200,shopify,deny,manual,69.99,,true,true,https://images.unsplash.com/photo-1585232004423-244e0e6904e3?w=800&h=800&fit=crop,1,Platform Chunky Sneakers,false,Platform Chunky Sneakers,Bold chunky platform sneakers with extra-thick sole. Add height and attitude to any outfit.,active
+platform-chunky-sneakers,,,,,,,true,Color,White,Size,6,,,PLATFORM-002,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,White,Size,7,,,PLATFORM-003,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,White,Size,8,,,PLATFORM-004,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,White,Size,9,,,PLATFORM-005,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,Black,Size,5,,,PLATFORM-006,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,Black,Size,6,,,PLATFORM-007,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,Black,Size,7,,,PLATFORM-008,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,Black,Size,8,,,PLATFORM-009,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,Black,Size,9,,,PLATFORM-010,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,Cream,Size,5,,,PLATFORM-011,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,Cream,Size,6,,,PLATFORM-012,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,Cream,Size,7,,,PLATFORM-013,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,Cream,Size,8,,,PLATFORM-014,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+platform-chunky-sneakers,,,,,,,true,Color,Cream,Size,9,,,PLATFORM-015,200,shopify,deny,manual,69.99,,true,true,,,,false,,,active
+classic-leather-chelsea-boots,Classic Leather Chelsea Boots,<p>Handcrafted genuine leather Chelsea boots with elastic side panels and durable rubber sole.</p>,FlexiStep,,Boots,"shoes, footwear, boots, chelsea, leather, men, best-sellers",true,Color,Brown,Size,8,,,CLASSIC-001,200,shopify,deny,manual,129.99,159.99,true,true,https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=800&h=800&fit=crop,1,Classic Leather Chelsea Boots,false,Classic Leather Chelsea Boots,Handcrafted genuine leather Chelsea boots with elastic side panels and durable rubber sole.,active
+classic-leather-chelsea-boots,,,,,,,true,Color,Brown,Size,9,,,CLASSIC-002,200,shopify,deny,manual,129.99,159.99,true,true,,,,false,,,active
+classic-leather-chelsea-boots,,,,,,,true,Color,Brown,Size,10,,,CLASSIC-003,200,shopify,deny,manual,129.99,159.99,true,true,,,,false,,,active
+classic-leather-chelsea-boots,,,,,,,true,Color,Brown,Size,11,,,CLASSIC-004,200,shopify,deny,manual,129.99,159.99,true,true,,,,false,,,active
+classic-leather-chelsea-boots,,,,,,,true,Color,Brown,Size,12,,,CLASSIC-005,200,shopify,deny,manual,129.99,159.99,true,true,,,,false,,,active
+classic-leather-chelsea-boots,,,,,,,true,Color,Black,Size,8,,,CLASSIC-006,200,shopify,deny,manual,129.99,159.99,true,true,,,,false,,,active
+classic-leather-chelsea-boots,,,,,,,true,Color,Black,Size,9,,,CLASSIC-007,200,shopify,deny,manual,129.99,159.99,true,true,,,,false,,,active
+classic-leather-chelsea-boots,,,,,,,true,Color,Black,Size,10,,,CLASSIC-008,200,shopify,deny,manual,129.99,159.99,true,true,,,,false,,,active
+classic-leather-chelsea-boots,,,,,,,true,Color,Black,Size,11,,,CLASSIC-009,200,shopify,deny,manual,129.99,159.99,true,true,,,,false,,,active
+classic-leather-chelsea-boots,,,,,,,true,Color,Black,Size,12,,,CLASSIC-010,200,shopify,deny,manual,129.99,159.99,true,true,,,,false,,,active
+suede-ankle-boots,Suede Ankle Boots,<p>Elegant suede ankle boots with a block heel. Dress up or down for any occasion.</p>,FlexiStep,,Boots,"shoes, footwear, boots, suede, ankle, women, sale",true,Color,Tan,Size,5,,,SUEDEAN-001,200,shopify,deny,manual,99.99,120.00,true,true,https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800&h=800&fit=crop,1,Suede Ankle Boots,false,Suede Ankle Boots,Elegant suede ankle boots with a block heel. Dress up or down for any occasion.,active
+suede-ankle-boots,,,,,,,true,Color,Tan,Size,6,,,SUEDEAN-002,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Tan,Size,7,,,SUEDEAN-003,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Tan,Size,8,,,SUEDEAN-004,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Tan,Size,9,,,SUEDEAN-005,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Black,Size,5,,,SUEDEAN-006,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Black,Size,6,,,SUEDEAN-007,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Black,Size,7,,,SUEDEAN-008,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Black,Size,8,,,SUEDEAN-009,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Black,Size,9,,,SUEDEAN-010,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Grey,Size,5,,,SUEDEAN-011,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Grey,Size,6,,,SUEDEAN-012,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Grey,Size,7,,,SUEDEAN-013,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Grey,Size,8,,,SUEDEAN-014,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+suede-ankle-boots,,,,,,,true,Color,Grey,Size,9,,,SUEDEAN-015,200,shopify,deny,manual,99.99,120.00,true,true,,,,false,,,active
+waterproof-hiking-boots,Waterproof Hiking Boots,<p>Rugged waterproof hiking boots with superior ankle support and Vibram-style outsole.</p>,FlexiStep,,Boots,"shoes, footwear, boots, hiking, outdoor, waterproof, men",true,Color,Brown,Size,8,,,WATERPRO-001,200,shopify,deny,manual,149.99,180.00,true,true,https://images.unsplash.com/photo-1520219306100-ec4afeeefe58?w=800&h=800&fit=crop,1,Waterproof Hiking Boots,false,Waterproof Hiking Boots,Rugged waterproof hiking boots with superior ankle support and Vibram-style outsole.,active
+waterproof-hiking-boots,,,,,,,true,Color,Brown,Size,9,,,WATERPRO-002,200,shopify,deny,manual,149.99,180.00,true,true,,,,false,,,active
+waterproof-hiking-boots,,,,,,,true,Color,Brown,Size,10,,,WATERPRO-003,200,shopify,deny,manual,149.99,180.00,true,true,,,,false,,,active
+waterproof-hiking-boots,,,,,,,true,Color,Brown,Size,11,,,WATERPRO-004,200,shopify,deny,manual,149.99,180.00,true,true,,,,false,,,active
+waterproof-hiking-boots,,,,,,,true,Color,Brown,Size,12,,,WATERPRO-005,200,shopify,deny,manual,149.99,180.00,true,true,,,,false,,,active
+waterproof-hiking-boots,,,,,,,true,Color,Dark Green,Size,8,,,WATERPRO-006,200,shopify,deny,manual,149.99,180.00,true,true,,,,false,,,active
+waterproof-hiking-boots,,,,,,,true,Color,Dark Green,Size,9,,,WATERPRO-007,200,shopify,deny,manual,149.99,180.00,true,true,,,,false,,,active
+waterproof-hiking-boots,,,,,,,true,Color,Dark Green,Size,10,,,WATERPRO-008,200,shopify,deny,manual,149.99,180.00,true,true,,,,false,,,active
+waterproof-hiking-boots,,,,,,,true,Color,Dark Green,Size,11,,,WATERPRO-009,200,shopify,deny,manual,149.99,180.00,true,true,,,,false,,,active
+waterproof-hiking-boots,,,,,,,true,Color,Dark Green,Size,12,,,WATERPRO-010,200,shopify,deny,manual,149.99,180.00,true,true,,,,false,,,active
+combat-moto-boots,Combat Moto Boots,<p>Tough combat-style moto boots with buckle detail and chunky lug sole. Statement footwear.</p>,FlexiStep,,Boots,"shoes, footwear, boots, combat, women, edgy, new-arrivals",true,Color,Black,Size,5,,,COMBATM-001,200,shopify,deny,manual,119.99,,true,true,https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?w=800&h=800&fit=crop,1,Combat Moto Boots,false,Combat Moto Boots,Tough combat-style moto boots with buckle detail and chunky lug sole. Statement footwear.,active
+combat-moto-boots,,,,,,,true,Color,Black,Size,6,,,COMBATM-002,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+combat-moto-boots,,,,,,,true,Color,Black,Size,7,,,COMBATM-003,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+combat-moto-boots,,,,,,,true,Color,Black,Size,8,,,COMBATM-004,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+combat-moto-boots,,,,,,,true,Color,Black,Size,9,,,COMBATM-005,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+combat-moto-boots,,,,,,,true,Color,Brown,Size,5,,,COMBATM-006,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+combat-moto-boots,,,,,,,true,Color,Brown,Size,6,,,COMBATM-007,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+combat-moto-boots,,,,,,,true,Color,Brown,Size,7,,,COMBATM-008,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+combat-moto-boots,,,,,,,true,Color,Brown,Size,8,,,COMBATM-009,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+combat-moto-boots,,,,,,,true,Color,Brown,Size,9,,,COMBATM-010,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+insulated-winter-snow-boots,Insulated Winter Snow Boots,<p>Warm insulated snow boots with faux fur lining and anti-slip sole. Rated to -25°F.</p>,FlexiStep,,Boots,"shoes, footwear, boots, winter, snow, waterproof, unisex, sale",true,Color,Black,Size,6,,,INSULATE-001,200,shopify,deny,manual,89.99,110.00,true,true,https://images.unsplash.com/photo-1610398752800-146f269dfcc8?w=800&h=800&fit=crop,1,Insulated Winter Snow Boots,false,Insulated Winter Snow Boots,Warm insulated snow boots with faux fur lining and anti-slip sole. Rated to -25°F.,active
+insulated-winter-snow-boots,,,,,,,true,Color,Black,Size,7,,,INSULATE-002,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Black,Size,8,,,INSULATE-003,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Black,Size,9,,,INSULATE-004,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Black,Size,10,,,INSULATE-005,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Black,Size,11,,,INSULATE-006,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Black,Size,12,,,INSULATE-007,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Brown,Size,6,,,INSULATE-008,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Brown,Size,7,,,INSULATE-009,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Brown,Size,8,,,INSULATE-010,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Brown,Size,9,,,INSULATE-011,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Brown,Size,10,,,INSULATE-012,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Brown,Size,11,,,INSULATE-013,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Brown,Size,12,,,INSULATE-014,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Navy,Size,6,,,INSULATE-015,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Navy,Size,7,,,INSULATE-016,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Navy,Size,8,,,INSULATE-017,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Navy,Size,9,,,INSULATE-018,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Navy,Size,10,,,INSULATE-019,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Navy,Size,11,,,INSULATE-020,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+insulated-winter-snow-boots,,,,,,,true,Color,Navy,Size,12,,,INSULATE-021,200,shopify,deny,manual,89.99,110.00,true,true,,,,false,,,active
+waterproof-rain-boots,Waterproof Rain Boots,<p>Stylish matte-finish rain boots that keep your feet dry. Comfortable enough for all-day wear.</p>,FlexiStep,,Boots,"shoes, footwear, boots, rain, waterproof, women, casual",true,Color,Olive,Size,5,,,WATERPRO-001,200,shopify,deny,manual,54.99,,true,true,https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&h=800&fit=crop,1,Waterproof Rain Boots,false,Waterproof Rain Boots,Stylish matte-finish rain boots that keep your feet dry. Comfortable enough for all-day wear.,active
+waterproof-rain-boots,,,,,,,true,Color,Olive,Size,6,,,WATERPRO-002,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Olive,Size,7,,,WATERPRO-003,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Olive,Size,8,,,WATERPRO-004,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Olive,Size,9,,,WATERPRO-005,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Black,Size,5,,,WATERPRO-006,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Black,Size,6,,,WATERPRO-007,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Black,Size,7,,,WATERPRO-008,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Black,Size,8,,,WATERPRO-009,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Black,Size,9,,,WATERPRO-010,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Red,Size,5,,,WATERPRO-011,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Red,Size,6,,,WATERPRO-012,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Red,Size,7,,,WATERPRO-013,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Red,Size,8,,,WATERPRO-014,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+waterproof-rain-boots,,,,,,,true,Color,Red,Size,9,,,WATERPRO-015,200,shopify,deny,manual,54.99,,true,true,,,,false,,,active
+comfort-slide-sandals,Comfort Slide Sandals,"<p>Ultra-comfortable slide sandals with contoured footbed. Perfect for beach, pool, or lounging.</p>",FlexiStep,,Sandals,"shoes, footwear, sandals, slides, casual, unisex, best-sellers",true,Color,Black,Size,7,,,COMFORT-001,200,shopify,deny,manual,34.99,,true,true,https://images.unsplash.com/photo-1603487742131-4160ec999306?w=800&h=800&fit=crop,1,Comfort Slide Sandals,false,Comfort Slide Sandals,"Ultra-comfortable slide sandals with contoured footbed. Perfect for beach, pool, or lounging.",active
+comfort-slide-sandals,,,,,,,true,Color,Black,Size,8,,,COMFORT-002,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,Black,Size,9,,,COMFORT-003,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,Black,Size,10,,,COMFORT-004,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,Black,Size,11,,,COMFORT-005,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,White,Size,7,,,COMFORT-006,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,White,Size,8,,,COMFORT-007,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,White,Size,9,,,COMFORT-008,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,White,Size,10,,,COMFORT-009,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,White,Size,11,,,COMFORT-010,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,Olive,Size,7,,,COMFORT-011,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,Olive,Size,8,,,COMFORT-012,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,Olive,Size,9,,,COMFORT-013,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,Olive,Size,10,,,COMFORT-014,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+comfort-slide-sandals,,,,,,,true,Color,Olive,Size,11,,,COMFORT-015,200,shopify,deny,manual,34.99,,true,true,,,,false,,,active
+strappy-summer-sandals,Strappy Summer Sandals,<p>Chic strappy sandals with cushioned insole. From brunch to beach in style.</p>,FlexiStep,,Sandals,"shoes, footwear, sandals, strappy, summer, women, sale",true,Color,Gold,Size,5,,,STRAPPY-001,200,shopify,deny,manual,44.99,55.00,true,true,https://images.unsplash.com/photo-1562183241-b937e95585b6?w=800&h=800&fit=crop,1,Strappy Summer Sandals,false,Strappy Summer Sandals,Chic strappy sandals with cushioned insole. From brunch to beach in style.,active
+strappy-summer-sandals,,,,,,,true,Color,Gold,Size,6,,,STRAPPY-002,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Gold,Size,7,,,STRAPPY-003,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Gold,Size,8,,,STRAPPY-004,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Gold,Size,9,,,STRAPPY-005,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Silver,Size,5,,,STRAPPY-006,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Silver,Size,6,,,STRAPPY-007,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Silver,Size,7,,,STRAPPY-008,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Silver,Size,8,,,STRAPPY-009,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Silver,Size,9,,,STRAPPY-010,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Black,Size,5,,,STRAPPY-011,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Black,Size,6,,,STRAPPY-012,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Black,Size,7,,,STRAPPY-013,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Black,Size,8,,,STRAPPY-014,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+strappy-summer-sandals,,,,,,,true,Color,Black,Size,9,,,STRAPPY-015,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+classic-rubber-flip-flops,Classic Rubber Flip-Flops,<p>Essential rubber flip-flops in bold colors. Lightweight and quick-drying for beach days.</p>,FlexiStep,,Sandals,"shoes, footwear, sandals, flip-flops, summer, unisex, beach",true,Color,Black,Size,6,,,CLASSIC-001,200,shopify,deny,manual,14.99,,true,true,https://images.unsplash.com/photo-1603487742131-4160ec999306?w=800&h=800&fit=crop,1,Classic Rubber Flip-Flops,false,Classic Rubber Flip-Flops,Essential rubber flip-flops in bold colors. Lightweight and quick-drying for beach days.,active
+classic-rubber-flip-flops,,,,,,,true,Color,Black,Size,7,,,CLASSIC-002,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Black,Size,8,,,CLASSIC-003,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Black,Size,9,,,CLASSIC-004,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Black,Size,10,,,CLASSIC-005,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Black,Size,11,,,CLASSIC-006,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Navy,Size,6,,,CLASSIC-007,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Navy,Size,7,,,CLASSIC-008,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Navy,Size,8,,,CLASSIC-009,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Navy,Size,9,,,CLASSIC-010,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Navy,Size,10,,,CLASSIC-011,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Navy,Size,11,,,CLASSIC-012,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Coral,Size,6,,,CLASSIC-013,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Coral,Size,7,,,CLASSIC-014,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Coral,Size,8,,,CLASSIC-015,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Coral,Size,9,,,CLASSIC-016,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Coral,Size,10,,,CLASSIC-017,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Coral,Size,11,,,CLASSIC-018,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Teal,Size,6,,,CLASSIC-019,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Teal,Size,7,,,CLASSIC-020,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Teal,Size,8,,,CLASSIC-021,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Teal,Size,9,,,CLASSIC-022,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Teal,Size,10,,,CLASSIC-023,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+classic-rubber-flip-flops,,,,,,,true,Color,Teal,Size,11,,,CLASSIC-024,200,shopify,deny,manual,14.99,,true,true,,,,false,,,active
+sport-hiking-sandals,Sport Hiking Sandals,<p>Rugged sport sandals with adjustable straps and grippy rubber outsole. Trail-ready comfort.</p>,FlexiStep,,Sandals,"shoes, footwear, sandals, sport, hiking, outdoor, men",true,Color,Black/Grey,Size,8,,,SPORTHI-001,200,shopify,deny,manual,59.99,72.00,true,true,https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&h=800&fit=crop,1,Sport Hiking Sandals,false,Sport Hiking Sandals,Rugged sport sandals with adjustable straps and grippy rubber outsole. Trail-ready comfort.,active
+sport-hiking-sandals,,,,,,,true,Color,Black/Grey,Size,9,,,SPORTHI-002,200,shopify,deny,manual,59.99,72.00,true,true,,,,false,,,active
+sport-hiking-sandals,,,,,,,true,Color,Black/Grey,Size,10,,,SPORTHI-003,200,shopify,deny,manual,59.99,72.00,true,true,,,,false,,,active
+sport-hiking-sandals,,,,,,,true,Color,Black/Grey,Size,11,,,SPORTHI-004,200,shopify,deny,manual,59.99,72.00,true,true,,,,false,,,active
+sport-hiking-sandals,,,,,,,true,Color,Black/Grey,Size,12,,,SPORTHI-005,200,shopify,deny,manual,59.99,72.00,true,true,,,,false,,,active
+sport-hiking-sandals,,,,,,,true,Color,Brown/Tan,Size,8,,,SPORTHI-006,200,shopify,deny,manual,59.99,72.00,true,true,,,,false,,,active
+sport-hiking-sandals,,,,,,,true,Color,Brown/Tan,Size,9,,,SPORTHI-007,200,shopify,deny,manual,59.99,72.00,true,true,,,,false,,,active
+sport-hiking-sandals,,,,,,,true,Color,Brown/Tan,Size,10,,,SPORTHI-008,200,shopify,deny,manual,59.99,72.00,true,true,,,,false,,,active
+sport-hiking-sandals,,,,,,,true,Color,Brown/Tan,Size,11,,,SPORTHI-009,200,shopify,deny,manual,59.99,72.00,true,true,,,,false,,,active
+sport-hiking-sandals,,,,,,,true,Color,Brown/Tan,Size,12,,,SPORTHI-010,200,shopify,deny,manual,59.99,72.00,true,true,,,,false,,,active
+wedge-platform-sandals,Wedge Platform Sandals,<p>Espadrille-style wedge sandals with ankle strap. Adds height and pairs with everything.</p>,FlexiStep,,Sandals,"shoes, footwear, sandals, wedge, platform, women, new-arrivals",true,Color,Tan,Size,5,,,WEDGEPL-001,200,shopify,deny,manual,64.99,,true,true,https://images.unsplash.com/photo-1562183241-b937e95585b6?w=800&h=800&fit=crop,1,Wedge Platform Sandals,false,Wedge Platform Sandals,Espadrille-style wedge sandals with ankle strap. Adds height and pairs with everything.,active
+wedge-platform-sandals,,,,,,,true,Color,Tan,Size,6,,,WEDGEPL-002,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,Tan,Size,7,,,WEDGEPL-003,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,Tan,Size,8,,,WEDGEPL-004,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,Tan,Size,9,,,WEDGEPL-005,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,Black,Size,5,,,WEDGEPL-006,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,Black,Size,6,,,WEDGEPL-007,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,Black,Size,7,,,WEDGEPL-008,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,Black,Size,8,,,WEDGEPL-009,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,Black,Size,9,,,WEDGEPL-010,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,White,Size,5,,,WEDGEPL-011,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,White,Size,6,,,WEDGEPL-012,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,White,Size,7,,,WEDGEPL-013,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,White,Size,8,,,WEDGEPL-014,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+wedge-platform-sandals,,,,,,,true,Color,White,Size,9,,,WEDGEPL-015,200,shopify,deny,manual,64.99,,true,true,,,,false,,,active
+leather-slide-sandals,Leather Slide Sandals,<p>Premium leather slide sandals with molded footbed. Elevated casual for summer days.</p>,FlexiStep,,Sandals,"shoes, footwear, sandals, leather, slides, men, casual, sale",true,Color,Brown,Size,8,,,LEATHER-001,200,shopify,deny,manual,49.99,60.00,true,true,https://images.unsplash.com/photo-1603487742131-4160ec999306?w=800&h=800&fit=crop,1,Leather Slide Sandals,false,Leather Slide Sandals,Premium leather slide sandals with molded footbed. Elevated casual for summer days.,active
+leather-slide-sandals,,,,,,,true,Color,Brown,Size,9,,,LEATHER-002,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Brown,Size,10,,,LEATHER-003,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Brown,Size,11,,,LEATHER-004,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Brown,Size,12,,,LEATHER-005,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Black,Size,8,,,LEATHER-006,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Black,Size,9,,,LEATHER-007,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Black,Size,10,,,LEATHER-008,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Black,Size,11,,,LEATHER-009,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Black,Size,12,,,LEATHER-010,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Tan,Size,8,,,LEATHER-011,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Tan,Size,9,,,LEATHER-012,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Tan,Size,10,,,LEATHER-013,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Tan,Size,11,,,LEATHER-014,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-slide-sandals,,,,,,,true,Color,Tan,Size,12,,,LEATHER-015,200,shopify,deny,manual,49.99,60.00,true,true,,,,false,,,active
+leather-penny-loafers,Leather Penny Loafers,<p>Premium leather penny loafers with hand-stitched details. Effortless sophistication.</p>,FlexiStep,,Loafers,"shoes, footwear, loafers, formal, leather, men, best-sellers",true,Color,Cognac,Size,8,,,LEATHER-001,200,shopify,deny,manual,109.99,135.00,true,true,https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=800&h=800&fit=crop,1,Leather Penny Loafers,false,Leather Penny Loafers,Premium leather penny loafers with hand-stitched details. Effortless sophistication.,active
+leather-penny-loafers,,,,,,,true,Color,Cognac,Size,9,,,LEATHER-002,200,shopify,deny,manual,109.99,135.00,true,true,,,,false,,,active
+leather-penny-loafers,,,,,,,true,Color,Cognac,Size,10,,,LEATHER-003,200,shopify,deny,manual,109.99,135.00,true,true,,,,false,,,active
+leather-penny-loafers,,,,,,,true,Color,Cognac,Size,11,,,LEATHER-004,200,shopify,deny,manual,109.99,135.00,true,true,,,,false,,,active
+leather-penny-loafers,,,,,,,true,Color,Cognac,Size,12,,,LEATHER-005,200,shopify,deny,manual,109.99,135.00,true,true,,,,false,,,active
+leather-penny-loafers,,,,,,,true,Color,Black,Size,8,,,LEATHER-006,200,shopify,deny,manual,109.99,135.00,true,true,,,,false,,,active
+leather-penny-loafers,,,,,,,true,Color,Black,Size,9,,,LEATHER-007,200,shopify,deny,manual,109.99,135.00,true,true,,,,false,,,active
+leather-penny-loafers,,,,,,,true,Color,Black,Size,10,,,LEATHER-008,200,shopify,deny,manual,109.99,135.00,true,true,,,,false,,,active
+leather-penny-loafers,,,,,,,true,Color,Black,Size,11,,,LEATHER-009,200,shopify,deny,manual,109.99,135.00,true,true,,,,false,,,active
+leather-penny-loafers,,,,,,,true,Color,Black,Size,12,,,LEATHER-010,200,shopify,deny,manual,109.99,135.00,true,true,,,,false,,,active
+oxford-brogue-dress-shoes,Oxford Brogue Dress Shoes,<p>Classic wingtip brogue Oxfords in polished leather. The ultimate dress shoe for work and events.</p>,FlexiStep,,Formal,"shoes, footwear, formal, oxford, brogue, leather, men, sale",true,Color,Black,Size,8,,,OXFORDB-001,200,shopify,deny,manual,139.99,170.00,true,true,https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=800&h=800&fit=crop,1,Oxford Brogue Dress Shoes,false,Oxford Brogue Dress Shoes,Classic wingtip brogue Oxfords in polished leather. The ultimate dress shoe for work and events.,active
+oxford-brogue-dress-shoes,,,,,,,true,Color,Black,Size,9,,,OXFORDB-002,200,shopify,deny,manual,139.99,170.00,true,true,,,,false,,,active
+oxford-brogue-dress-shoes,,,,,,,true,Color,Black,Size,10,,,OXFORDB-003,200,shopify,deny,manual,139.99,170.00,true,true,,,,false,,,active
+oxford-brogue-dress-shoes,,,,,,,true,Color,Black,Size,11,,,OXFORDB-004,200,shopify,deny,manual,139.99,170.00,true,true,,,,false,,,active
+oxford-brogue-dress-shoes,,,,,,,true,Color,Black,Size,12,,,OXFORDB-005,200,shopify,deny,manual,139.99,170.00,true,true,,,,false,,,active
+oxford-brogue-dress-shoes,,,,,,,true,Color,Dark Brown,Size,8,,,OXFORDB-006,200,shopify,deny,manual,139.99,170.00,true,true,,,,false,,,active
+oxford-brogue-dress-shoes,,,,,,,true,Color,Dark Brown,Size,9,,,OXFORDB-007,200,shopify,deny,manual,139.99,170.00,true,true,,,,false,,,active
+oxford-brogue-dress-shoes,,,,,,,true,Color,Dark Brown,Size,10,,,OXFORDB-008,200,shopify,deny,manual,139.99,170.00,true,true,,,,false,,,active
+oxford-brogue-dress-shoes,,,,,,,true,Color,Dark Brown,Size,11,,,OXFORDB-009,200,shopify,deny,manual,139.99,170.00,true,true,,,,false,,,active
+oxford-brogue-dress-shoes,,,,,,,true,Color,Dark Brown,Size,12,,,OXFORDB-010,200,shopify,deny,manual,139.99,170.00,true,true,,,,false,,,active
+derby-lace-up-shoes,Derby Lace-Up Shoes,<p>Clean-cut leather Derby shoes with open lacing. Versatile enough for office to evening.</p>,FlexiStep,,Formal,"shoes, footwear, formal, derby, leather, men, new-arrivals",true,Color,Black,Size,8,,,DERBYLA-001,200,shopify,deny,manual,119.99,,true,true,https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=800&h=800&fit=crop,1,Derby Lace-Up Shoes,false,Derby Lace-Up Shoes,Clean-cut leather Derby shoes with open lacing. Versatile enough for office to evening.,active
+derby-lace-up-shoes,,,,,,,true,Color,Black,Size,9,,,DERBYLA-002,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+derby-lace-up-shoes,,,,,,,true,Color,Black,Size,10,,,DERBYLA-003,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+derby-lace-up-shoes,,,,,,,true,Color,Black,Size,11,,,DERBYLA-004,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+derby-lace-up-shoes,,,,,,,true,Color,Black,Size,12,,,DERBYLA-005,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+derby-lace-up-shoes,,,,,,,true,Color,Tan,Size,8,,,DERBYLA-006,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+derby-lace-up-shoes,,,,,,,true,Color,Tan,Size,9,,,DERBYLA-007,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+derby-lace-up-shoes,,,,,,,true,Color,Tan,Size,10,,,DERBYLA-008,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+derby-lace-up-shoes,,,,,,,true,Color,Tan,Size,11,,,DERBYLA-009,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+derby-lace-up-shoes,,,,,,,true,Color,Tan,Size,12,,,DERBYLA-010,200,shopify,deny,manual,119.99,,true,true,,,,false,,,active
+women-s-ballet-flats,Women's Ballet Flats,<p>Elegant ballet flats with cushioned insole and soft leather upper. Day-to-night versatility.</p>,FlexiStep,,Flats,"shoes, footwear, flats, formal, women, casual, best-sellers",true,Color,Nude,Size,5,,,WOMENS-001,200,shopify,deny,manual,44.99,55.00,true,true,https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800&h=800&fit=crop,1,Women's Ballet Flats,false,Women's Ballet Flats,Elegant ballet flats with cushioned insole and soft leather upper. Day-to-night versatility.,active
+women-s-ballet-flats,,,,,,,true,Color,Nude,Size,6,,,WOMENS-002,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Nude,Size,7,,,WOMENS-003,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Nude,Size,8,,,WOMENS-004,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Nude,Size,9,,,WOMENS-005,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Black,Size,5,,,WOMENS-006,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Black,Size,6,,,WOMENS-007,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Black,Size,7,,,WOMENS-008,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Black,Size,8,,,WOMENS-009,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Black,Size,9,,,WOMENS-010,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Red,Size,5,,,WOMENS-011,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Red,Size,6,,,WOMENS-012,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Red,Size,7,,,WOMENS-013,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Red,Size,8,,,WOMENS-014,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Red,Size,9,,,WOMENS-015,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Navy,Size,5,,,WOMENS-016,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Navy,Size,6,,,WOMENS-017,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Navy,Size,7,,,WOMENS-018,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Navy,Size,8,,,WOMENS-019,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-ballet-flats,,,,,,,true,Color,Navy,Size,9,,,WOMENS-020,200,shopify,deny,manual,44.99,55.00,true,true,,,,false,,,active
+women-s-block-heel-pumps,Women's Block Heel Pumps,"<p>Modern block heel pumps in smooth leather. Stable, stylish, and perfect for long wear.</p>",FlexiStep,,Heels,"shoes, footwear, heels, formal, women, block-heel, new-arrivals",true,Color,Black,Size,5,,,WOMENS-001,200,shopify,deny,manual,79.99,,true,true,https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800&h=800&fit=crop,1,Women's Block Heel Pumps,false,Women's Block Heel Pumps,"Modern block heel pumps in smooth leather. Stable, stylish, and perfect for long wear.",active
+women-s-block-heel-pumps,,,,,,,true,Color,Black,Size,6,,,WOMENS-002,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Black,Size,7,,,WOMENS-003,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Black,Size,8,,,WOMENS-004,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Black,Size,9,,,WOMENS-005,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Beige,Size,5,,,WOMENS-006,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Beige,Size,6,,,WOMENS-007,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Beige,Size,7,,,WOMENS-008,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Beige,Size,8,,,WOMENS-009,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Beige,Size,9,,,WOMENS-010,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Red,Size,5,,,WOMENS-011,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Red,Size,6,,,WOMENS-012,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Red,Size,7,,,WOMENS-013,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Red,Size,8,,,WOMENS-014,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active
+women-s-block-heel-pumps,,,,,,,true,Color,Red,Size,9,,,WOMENS-015,200,shopify,deny,manual,79.99,,true,true,,,,false,,,active

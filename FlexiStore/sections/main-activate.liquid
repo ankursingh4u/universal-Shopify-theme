@@ -1,0 +1,29 @@
+<div class="section">
+  <div class="page-width">
+    <div style="max-width: 450px; margin: 0 auto; text-align: center;">
+      <h1 style="margin-bottom: 1rem;">Activate Account</h1>
+      <p style="margin-bottom: 2rem; color: var(--color-text-light);">Create your password to activate your account.</p>
+
+      {%- form 'activate_customer_password' -%}
+        <div class="field" style="margin-bottom: 1rem; text-align: left;">
+          <label class="field__label" for="Password">Password</label>
+          <input type="password" id="Password" name="customer[password]" class="field__input" required>
+        </div>
+        <div class="field" style="margin-bottom: 1.5rem; text-align: left;">
+          <label class="field__label" for="PasswordConfirm">Confirm password</label>
+          <input type="password" id="PasswordConfirm" name="customer[password_confirmation]" class="field__input" required>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Activate Account</button>
+        <p style="margin-top: 1rem;"><a href="{{ routes.account_login_url }}" style="font-size: 0.875rem; text-decoration: underline;">Decline invitation</a></p>
+      {%- endform -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Activate account",
+  "tag": "section",
+  "settings": []
+}
+{% endschema %}

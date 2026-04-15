@@ -1,0 +1,65 @@
+{%- capture niche_f1_title -%}{%- render 'niche-value', key: 'feature_1_title' -%}{%- endcapture -%}
+{%- capture niche_f1_text -%}{%- render 'niche-value', key: 'feature_1_text' -%}{%- endcapture -%}
+{%- capture niche_f2_title -%}{%- render 'niche-value', key: 'feature_2_title' -%}{%- endcapture -%}
+{%- capture niche_f2_text -%}{%- render 'niche-value', key: 'feature_2_text' -%}{%- endcapture -%}
+{%- capture niche_f3_title -%}{%- render 'niche-value', key: 'feature_3_title' -%}{%- endcapture -%}
+{%- capture niche_f3_text -%}{%- render 'niche-value', key: 'feature_3_text' -%}{%- endcapture -%}
+
+<div class="section{% if section.settings.use_alt_bg %} section--alt{% endif %}">
+  <div class="page-width">
+    <div class="section-header{% if section.settings.heading_alignment == 'center' %} text-center{% endif %}">
+      <h2>{%- if section.settings.heading != blank -%}{{ section.settings.heading }}{%- else -%}Why shop with us{%- endif -%}</h2>
+    </div>
+
+    <div class="multi-column__grid" style="grid-template-columns: repeat({{ section.settings.columns }}, 1fr);">
+      {%- if section.blocks.size > 0 -%}
+        {%- for block in section.blocks -%}
+          <div class="multi-column__item" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              <div class="multi-column__icon"><img src="{{ block.settings.image | image_url: width: 100 }}" alt="{{ block.settings.image.alt | escape }}" loading="lazy" width="56" height="56"></div>
+            {%- endif -%}
+            {%- if block.settings.title != blank -%}<h3 class="multi-column__item-title h4">{{ block.settings.title }}</h3>{%- endif -%}
+            {%- if block.settings.text != blank -%}<p class="multi-column__item-text">{{ block.settings.text }}</p>{%- endif -%}
+            {%- if block.settings.link_label != blank -%}<a href="{{ block.settings.link }}" class="btn btn--secondary btn--small" style="margin-top:1rem;">{{ block.settings.link_label }}</a>{%- endif -%}
+          </div>
+        {%- endfor -%}
+      {%- else -%}
+        <div class="multi-column__item">
+          <h3 class="multi-column__item-title h4">{{ niche_f1_title }}</h3>
+          <p class="multi-column__item-text">{{ niche_f1_text }}</p>
+        </div>
+        <div class="multi-column__item">
+          <h3 class="multi-column__item-title h4">{{ niche_f2_title }}</h3>
+          <p class="multi-column__item-text">{{ niche_f2_text }}</p>
+        </div>
+        <div class="multi-column__item">
+          <h3 class="multi-column__item-title h4">{{ niche_f3_title }}</h3>
+          <p class="multi-column__item-text">{{ niche_f3_text }}</p>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Multi-column",
+  "tag": "section",
+  "class": "section-multi-column",
+  "settings": [
+    { "type": "paragraph", "content": "Leave blocks empty to auto-fill based on your store niche." },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "select", "id": "heading_alignment", "label": "Heading alignment", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Center" }], "default": "center" },
+    { "type": "select", "id": "columns", "label": "Number of columns", "options": [{ "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" }], "default": "3" },
+    { "type": "checkbox", "id": "use_alt_bg", "label": "Use alternate background color", "default": true }
+  ],
+  "blocks": [{ "type": "column", "name": "Column", "settings": [
+    { "type": "image_picker", "id": "image", "label": "Icon / Image" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Column title" },
+    { "type": "textarea", "id": "text", "label": "Description", "default": "Add your text here." },
+    { "type": "text", "id": "link_label", "label": "Link label" },
+    { "type": "url", "id": "link", "label": "Link" }
+  ]}],
+  "presets": [{ "name": "Multi-column" }]
+}
+{% endschema %}

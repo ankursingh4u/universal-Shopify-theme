@@ -1,0 +1,88 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-banner",
+      "settings": {
+        "height": "medium",
+        "content_position": "center",
+        "text_color": "#FFFFFF",
+        "overlay_color": "#000000",
+        "overlay_opacity": 35
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "heading_alignment": "center",
+        "products_to_show": 4,
+        "columns": "4",
+        "show_view_all": true,
+        "use_alt_bg": false
+      }
+    },
+    "multi_column": {
+      "type": "multi-column",
+      "settings": {
+        "heading_alignment": "center",
+        "columns": "3",
+        "use_alt_bg": true
+      }
+    },
+    "image_with_text": {
+      "type": "image-with-text",
+      "settings": {
+        "layout": "image_left",
+        "use_alt_bg": false
+      }
+    },
+    "category_showcase": {
+      "type": "category-showcase",
+      "settings": {
+        "heading_alignment": "center",
+        "columns": "3",
+        "use_alt_bg": false
+      }
+    },
+    "product_slider": {
+      "type": "product-slider",
+      "settings": {
+        "heading": "Trending now",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "use_alt_bg": true
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {
+        "heading_alignment": "center",
+        "columns": "3",
+        "use_alt_bg": false
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {
+        "heading_alignment": "center",
+        "use_alt_bg": true
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "use_alt_bg": false
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "featured_collection",
+    "multi_column",
+    "image_with_text",
+    "category_showcase",
+    "product_slider",
+    "testimonials",
+    "faq",
+    "newsletter"
+  ]
+}

@@ -1,0 +1,126 @@
+{%- liquid
+  assign columns = section.settings.columns
+  assign products_per_page = section.settings.products_per_page
+-%}
+
+<div class="section">
+  <div class="page-width">
+    {%- comment -%} Collection header {%- endcomment -%}
+    <div class="collection__header">
+      <h1 class="collection__title">{{ collection.title | escape }}</h1>
+      {%- if collection.description != blank and section.settings.show_description -%}
+        <div class="collection__description">{{ collection.description }}</div>
+      {%- endif -%}
+    </div>
+
+    {%- comment -%} Toolbar: count + sorting {%- endcomment -%}
+    <div class="collection__toolbar">
+      <span class="collection__count">
+        {{ 'collections.general.product_count' | t: count: collection.products_count }}
+      </span>
+
+      {%- if section.settings.show_sort -%}
+        <div class="collection__sort">
+          <label for="SortBy">{{ 'collections.general.sort_by' | t }}:</label>
+          <select id="SortBy" data-collection-sort>
+            {%- for option in collection.sort_options -%}
+              <option value="{{ option.value }}" {% if collection.sort_by == option.value %}selected{% endif %}>
+                {{ option.name }}
+              </option>
+            {%- endfor -%}
+          </select>
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- comment -%} Storefront filtering is handled by Shopify's native Search & Discovery app {%- endcomment -%}
+
+    {%- comment -%} Product grid {%- endcomment -%}
+    {%- paginate collection.products by products_per_page -%}
+      {%- if collection.products.size > 0 -%}
+        <div class="grid grid--{{ columns }}">
+          {%- for product in collection.products -%}
+            <div>
+              {% render 'card-product', product: product %}
+            </div>
+          {%- endfor -%}
+        </div>
+
+        {%- comment -%} Pagination {%- endcomment -%}
+        {%- if paginate.pages > 1 -%}
+          <div class="collection__pagination">
+            {%- if paginate.previous -%}
+              <a href="{{ paginate.previous.url }}" aria-label="Previous page">&laquo;</a>
+            {%- endif -%}
+            {%- for part in paginate.parts -%}
+              {%- if part.is_link -%}
+                <a href="{{ part.url }}">{{ part.title }}</a>
+              {%- else -%}
+                <span class="is-current">{{ part.title }}</span>
+              {%- endif -%}
+            {%- endfor -%}
+            {%- if paginate.next -%}
+              <a href="{{ paginate.next.url }}" aria-label="Next page">&raquo;</a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- else -%}
+        <div class="collection__empty">
+          <p>{{ 'collections.general.no_products' | t }}</p>
+          <a href="{{ routes.all_products_collection_url }}" class="btn btn--primary" style="margin-top: 1rem;">
+            {{ 'general.continue_shopping' | t }}
+          </a>
+        </div>
+      {%- endif -%}
+    {%- endpaginate -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection page",
+  "tag": "section",
+  "class": "section-collection",
+  "settings": [
+    {
+      "type": "range",
+      "id": "products_per_page",
+      "label": "Products per page",
+      "min": 4,
+      "max": 24,
+      "step": 4,
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Grid columns",
+      "options": [
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" }
+      ],
+      "default": "4"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show collection description",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sort",
+      "label": "Show sort dropdown",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tag_filters",
+      "label": "Show tag filters (legacy)",
+      "default": false,
+      "info": "Use Shopify's Search & Discovery app for modern filtering instead."
+    }
+  ]
+}
+{% endschema %}

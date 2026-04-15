@@ -1,0 +1,63 @@
+{%- capture niche_faq_1_q -%}{%- render 'niche-value', key: 'faq_1_q' -%}{%- endcapture -%}
+{%- capture niche_faq_1_a -%}{%- render 'niche-value', key: 'faq_1_a' -%}{%- endcapture -%}
+{%- capture niche_faq_2_q -%}{%- render 'niche-value', key: 'faq_2_q' -%}{%- endcapture -%}
+{%- capture niche_faq_2_a -%}{%- render 'niche-value', key: 'faq_2_a' -%}{%- endcapture -%}
+{%- capture niche_faq_3_q -%}{%- render 'niche-value', key: 'faq_3_q' -%}{%- endcapture -%}
+{%- capture niche_faq_3_a -%}{%- render 'niche-value', key: 'faq_3_a' -%}{%- endcapture -%}
+{%- capture niche_faq_4_q -%}{%- render 'niche-value', key: 'faq_4_q' -%}{%- endcapture -%}
+{%- capture niche_faq_4_a -%}{%- render 'niche-value', key: 'faq_4_a' -%}{%- endcapture -%}
+
+<div class="section{% if section.settings.use_alt_bg %} section--alt{% endif %}">
+  <div class="page-width">
+    <div class="section-header{% if section.settings.heading_alignment == 'center' %} text-center{% endif %}">
+      <h2>{%- if section.settings.heading != blank -%}{{ section.settings.heading }}{%- else -%}Frequently Asked Questions{%- endif -%}</h2>
+    </div>
+
+    <div style="max-width: 800px;{% if section.settings.heading_alignment == 'center' %} margin: 0 auto;{% endif %}">
+      {%- if section.blocks.size > 0 -%}
+        {%- for block in section.blocks -%}
+          <div class="faq__item" {{ block.shopify_attributes }}>
+            <button class="faq__question" data-faq-toggle aria-expanded="false"><span>{{ block.settings.question }}</span>{% render 'icon-chevron-down' %}</button>
+            <div class="faq__answer" role="region"><div class="faq__answer-inner">{{ block.settings.answer }}</div></div>
+          </div>
+        {%- endfor -%}
+      {%- else -%}
+        <div class="faq__item">
+          <button class="faq__question" data-faq-toggle aria-expanded="false"><span>{{ niche_faq_1_q }}</span>{% render 'icon-chevron-down' %}</button>
+          <div class="faq__answer" role="region"><div class="faq__answer-inner"><p>{{ niche_faq_1_a }}</p></div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" data-faq-toggle aria-expanded="false"><span>{{ niche_faq_2_q }}</span>{% render 'icon-chevron-down' %}</button>
+          <div class="faq__answer" role="region"><div class="faq__answer-inner"><p>{{ niche_faq_2_a }}</p></div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" data-faq-toggle aria-expanded="false"><span>{{ niche_faq_3_q }}</span>{% render 'icon-chevron-down' %}</button>
+          <div class="faq__answer" role="region"><div class="faq__answer-inner"><p>{{ niche_faq_3_a }}</p></div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" data-faq-toggle aria-expanded="false"><span>{{ niche_faq_4_q }}</span>{% render 'icon-chevron-down' %}</button>
+          <div class="faq__answer" role="region"><div class="faq__answer-inner"><p>{{ niche_faq_4_a }}</p></div></div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "tag": "section",
+  "class": "section-faq",
+  "settings": [
+    { "type": "paragraph", "content": "Leave blocks empty to auto-fill based on your store niche." },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "select", "id": "heading_alignment", "label": "Heading alignment", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Center" }], "default": "center" },
+    { "type": "checkbox", "id": "use_alt_bg", "label": "Use alternate background color", "default": true }
+  ],
+  "blocks": [{ "type": "question", "name": "Question", "settings": [
+    { "type": "text", "id": "question", "label": "Question", "default": "Your question here" },
+    { "type": "richtext", "id": "answer", "label": "Answer", "default": "<p>Your answer here.</p>" }
+  ]}],
+  "presets": [{ "name": "FAQ" }]
+}
+{% endschema %}

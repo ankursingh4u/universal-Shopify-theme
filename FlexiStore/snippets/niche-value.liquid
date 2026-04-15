@@ -1,0 +1,571 @@
+{%- comment -%}
+  NICHE VALUE OUTPUT ENGINE
+  =========================
+  Outputs a single niche-specific value based on `key` parameter.
+  Uses the capture pattern to work with render's isolated scope.
+
+  Usage:
+    {%- capture my_var -%}{%- render 'niche-value', key: 'hero_heading' -%}{%- endcapture -%}
+    {{ my_var }}
+
+  Supported keys:
+    hero_heading, hero_subheading,
+    about_heading, about_text,
+    newsletter_heading, newsletter_subheading,
+    feature_1_title, feature_1_text, feature_2_title, feature_2_text, feature_3_title, feature_3_text,
+    testimonial_1_text, testimonial_1_author, testimonial_2_text, testimonial_2_author, testimonial_3_text, testimonial_3_author,
+    faq_1_q, faq_1_a, faq_2_q, faq_2_a, faq_3_q, faq_3_a, faq_4_q, faq_4_a,
+    cat_1, cat_2, cat_3,
+    color_primary, color_accent, color_heading, color_bg,
+    hero_image, story_image, cat_1_image, cat_2_image, cat_3_image
+{%- endcomment -%}
+{%- case settings.store_niche -%}
+
+{%- when 'fashion' -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}Elevate Your Style
+    {%- when 'hero_subheading' -%}Discover the latest trends in fashion. Curated collections for every occasion and every season.
+    {%- when 'about_heading' -%}Our Fashion Story
+    {%- when 'about_text' -%}We believe fashion is self-expression. Every piece in our collection is carefully selected to help you look and feel your best, every single day.
+    {%- when 'newsletter_heading' -%}Get Style Updates
+    {%- when 'newsletter_subheading' -%}Be the first to know about new arrivals, exclusive deals, and styling tips.
+    {%- when 'feature_1_title' -%}Latest Trends
+    {%- when 'feature_1_text' -%}Freshly curated styles updated every week to keep you ahead of the fashion curve.
+    {%- when 'feature_2_title' -%}Premium Quality
+    {%- when 'feature_2_text' -%}Only the finest fabrics and craftsmanship. Every item meets our strict quality standards.
+    {%- when 'feature_3_title' -%}Free Returns
+    {%- when 'feature_3_text' -%}Not the right fit? Return within 30 days for a full refund. No questions asked.
+    {%- when 'testimonial_1_text' -%}The quality of the fabrics is incredible. I get compliments every time I wear something from here!
+    {%- when 'testimonial_1_author' -%}Priya S.
+    {%- when 'testimonial_2_text' -%}Fast shipping and the clothes fit perfectly. This is my go-to fashion store now.
+    {%- when 'testimonial_2_author' -%}Rachel M.
+    {%- when 'testimonial_3_text' -%}Love the curated collections! Every piece feels like it was picked just for me.
+    {%- when 'testimonial_3_author' -%}Aisha K.
+    {%- when 'faq_1_q' -%}What sizes do you offer?
+    {%- when 'faq_1_a' -%}We offer sizes from XS to 3XL across most of our collections. Check individual product pages for specific size charts and measurements.
+    {%- when 'faq_2_q' -%}How do I find my size?
+    {%- when 'faq_2_a' -%}Each product page includes a detailed size guide. Measure yourself and compare with our charts for the perfect fit.
+    {%- when 'faq_3_q' -%}What is your return policy?
+    {%- when 'faq_3_a' -%}We accept returns within 30 days of delivery for unworn items with tags attached. We provide free return shipping labels.
+    {%- when 'faq_4_q' -%}How long does shipping take?
+    {%- when 'faq_4_a' -%}Standard shipping takes 5-7 business days. Express delivery (2-3 days) is available at checkout.
+    {%- when 'cat_1' -%}Women
+    {%- when 'cat_2' -%}Men
+    {%- when 'cat_3' -%}Accessories
+    {%- when 'color_primary' -%}#1A1A2E
+    {%- when 'color_accent' -%}#C9184A
+    {%- when 'color_heading' -%}#1A1A2E
+    {%- when 'color_bg' -%}#FAFAFA
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- when 'shoes' -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}Step Into Style
+    {%- when 'hero_subheading' -%}Premium footwear for every step of your journey. Comfort meets design.
+    {%- when 'about_heading' -%}Crafted for Comfort
+    {%- when 'about_text' -%}Every pair is designed with your feet in mind. We source the finest materials to deliver footwear that looks amazing and feels even better.
+    {%- when 'newsletter_heading' -%}Walk With Us
+    {%- when 'newsletter_subheading' -%}Get early access to new drops, limited editions, and exclusive discounts.
+    {%- when 'feature_1_title' -%}All-Day Comfort
+    {%- when 'feature_1_text' -%}Engineered soles and cushioned insoles for comfort that lasts from morning to night.
+    {%- when 'feature_2_title' -%}Premium Leather
+    {%- when 'feature_2_text' -%}Crafted from genuine, ethically sourced leather and high-performance materials.
+    {%- when 'feature_3_title' -%}Free Exchanges
+    {%- when 'feature_3_text' -%}Wrong size? We offer free size exchanges within 30 days of purchase.
+    {%- when 'testimonial_1_text' -%}Most comfortable shoes I have ever owned. Wore them all day without any pain!
+    {%- when 'testimonial_1_author' -%}David R.
+    {%- when 'testimonial_2_text' -%}The quality is outstanding for the price. Already ordered my second pair.
+    {%- when 'testimonial_2_author' -%}Sneha P.
+    {%- when 'testimonial_3_text' -%}Fast shipping, perfect fit, great design. What more could you ask for?
+    {%- when 'testimonial_3_author' -%}Marcus L.
+    {%- when 'faq_1_q' -%}How do I find my shoe size?
+    {%- when 'faq_1_a' -%}Use our size guide on each product page. We recommend measuring your foot length in cm and comparing with our chart.
+    {%- when 'faq_2_q' -%}Are the shoes true to size?
+    {%- when 'faq_2_a' -%}Most of our shoes run true to size. Each product page includes fit notes from real customers.
+    {%- when 'faq_3_q' -%}What if they do not fit?
+    {%- when 'faq_3_a' -%}No worries! We offer free size exchanges within 30 days. Just contact us and we will send the right size.
+    {%- when 'faq_4_q' -%}How do I care for my shoes?
+    {%- when 'faq_4_a' -%}Care instructions are included with every pair. Generally, keep them clean, dry, and store with shoe trees.
+    {%- when 'cat_1' -%}Sneakers
+    {%- when 'cat_2' -%}Boots
+    {%- when 'cat_3' -%}Sandals
+    {%- when 'color_primary' -%}#2D2D2D
+    {%- when 'color_accent' -%}#E63946
+    {%- when 'color_heading' -%}#1D1D1D
+    {%- when 'color_bg' -%}#F9F9F9
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1552346154-21d32810aba3?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1603487742131-4160ec999306?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- when 'baby' -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}The Best for Your Little Ones
+    {%- when 'hero_subheading' -%}Safe, adorable, and made with love. Everything your baby needs in one place.
+    {%- when 'about_heading' -%}Made with Love
+    {%- when 'about_text' -%}Every product is carefully selected for safety, comfort, and quality. Because your little one deserves nothing but the best.
+    {%- when 'newsletter_heading' -%}Join Our Parent Community
+    {%- when 'newsletter_subheading' -%}Get parenting tips, new arrival alerts, and exclusive discounts for new parents.
+    {%- when 'feature_1_title' -%}100% Safe Materials
+    {%- when 'feature_1_text' -%}All products are BPA-free, non-toxic, and meet the highest safety standards.
+    {%- when 'feature_2_title' -%}Organic & Gentle
+    {%- when 'feature_2_text' -%}Soft organic fabrics that are gentle on delicate baby skin.
+    {%- when 'feature_3_title' -%}Pediatrician Approved
+    {%- when 'feature_3_text' -%}Recommended by pediatricians and trusted by thousands of parents.
+    {%- when 'testimonial_1_text' -%}Everything is so soft and well-made. My baby loves the organic cotton onesies!
+    {%- when 'testimonial_1_author' -%}Maria G.
+    {%- when 'testimonial_2_text' -%}Finally a store where I can trust every product is safe for my little one. Thank you!
+    {%- when 'testimonial_2_author' -%}Jessica T.
+    {%- when 'testimonial_3_text' -%}Great quality, fast shipping, and the packaging was beautiful. Perfect for gifting too!
+    {%- when 'testimonial_3_author' -%}Anita R.
+    {%- when 'faq_1_q' -%}Are all products safe for newborns?
+    {%- when 'faq_1_a' -%}Yes! All our products meet strict safety standards and are tested for newborns and infants. We only stock BPA-free, non-toxic items.
+    {%- when 'faq_2_q' -%}What age range do you cater to?
+    {%- when 'faq_2_a' -%}We carry products for newborns through toddlers (0-4 years). Each product listing includes the recommended age range.
+    {%- when 'faq_3_q' -%}Do you offer gift wrapping?
+    {%- when 'faq_3_a' -%}Yes! We offer beautiful gift wrapping for a small fee. Select the gift wrap option at checkout.
+    {%- when 'faq_4_q' -%}What if my child has sensitive skin?
+    {%- when 'faq_4_a' -%}Many of our products are made with organic, hypoallergenic materials specifically for sensitive skin.
+    {%- when 'cat_1' -%}Baby Clothing
+    {%- when 'cat_2' -%}Nursery
+    {%- when 'cat_3' -%}Bath & Care
+    {%- when 'color_primary' -%}#6B8FA3
+    {%- when 'color_accent' -%}#E8837C
+    {%- when 'color_heading' -%}#3D5A6E
+    {%- when 'color_bg' -%}#FDF6F0
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1522771930-78848d9293e8?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1522771930-78848d9293e8?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- when 'toys' -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}Play. Learn. Grow.
+    {%- when 'hero_subheading' -%}Discover toys that spark imagination, build skills, and bring endless fun for every age.
+    {%- when 'about_heading' -%}Fun With a Purpose
+    {%- when 'about_text' -%}We curate toys that are not just fun — they help children develop creativity, motor skills, and social skills through play.
+    {%- when 'newsletter_heading' -%}Never Miss the Fun
+    {%- when 'newsletter_subheading' -%}Get alerts on new arrivals, seasonal sales, and toy recommendations by age.
+    {%- when 'feature_1_title' -%}Safety Tested
+    {%- when 'feature_1_text' -%}Every toy meets international safety standards. CPSC and CE certified for your peace of mind.
+    {%- when 'feature_2_title' -%}Age Appropriate
+    {%- when 'feature_2_text' -%}Clearly labeled age recommendations to help you find the perfect toy.
+    {%- when 'feature_3_title' -%}Educational Value
+    {%- when 'feature_3_text' -%}Toys that combine fun with learning — STEM, creativity, and motor skills.
+    {%- when 'testimonial_1_text' -%}My kids absolutely love everything we ordered. Great quality and the educational toys are a hit!
+    {%- when 'testimonial_1_author' -%}Neha M.
+    {%- when 'testimonial_2_text' -%}Safe, fun, and well-made toys. This is the only store I trust for my children.
+    {%- when 'testimonial_2_author' -%}Tom B.
+    {%- when 'testimonial_3_text' -%}Fast delivery and everything was packaged perfectly. The wooden toys are gorgeous!
+    {%- when 'testimonial_3_author' -%}Linda W.
+    {%- when 'faq_1_q' -%}Are your toys safe for toddlers?
+    {%- when 'faq_1_a' -%}Absolutely! All our toys are safety tested and certified. We clearly label age recommendations on every product.
+    {%- when 'faq_2_q' -%}Do you have educational toys?
+    {%- when 'faq_2_a' -%}Yes! We have a dedicated educational collection including STEM toys, puzzles, building blocks, and creative arts kits.
+    {%- when 'faq_3_q' -%}Can I return a toy if my child does not like it?
+    {%- when 'faq_3_a' -%}Yes, we accept returns within 30 days for unopened, unused toys in original packaging.
+    {%- when 'faq_4_q' -%}Do you offer gift cards?
+    {%- when 'faq_4_a' -%}Yes! Our digital gift cards are perfect when you want to let parents choose. Available in various amounts.
+    {%- when 'cat_1' -%}Educational
+    {%- when 'cat_2' -%}Outdoor Play
+    {%- when 'cat_3' -%}Board Games
+    {%- when 'color_primary' -%}#FF6B35
+    {%- when 'color_accent' -%}#004E89
+    {%- when 'color_heading' -%}#2B2D42
+    {%- when 'color_bg' -%}#FFFBF5
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- when 'kitchen' -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}Make Your Kitchen Shine
+    {%- when 'hero_subheading' -%}Quality kitchenware and home essentials that make everyday cooking a joy.
+    {%- when 'about_heading' -%}Built to Last
+    {%- when 'about_text' -%}We source durable, beautifully designed kitchen tools that make cooking easier and more enjoyable. From prep to plate, we have got you covered.
+    {%- when 'newsletter_heading' -%}Kitchen Inspiration
+    {%- when 'newsletter_subheading' -%}Get recipes, kitchen tips, and exclusive deals delivered to your inbox.
+    {%- when 'feature_1_title' -%}Durable Quality
+    {%- when 'feature_1_text' -%}Built to last with premium materials — stainless steel, bamboo, and food-grade silicone.
+    {%- when 'feature_2_title' -%}Easy to Clean
+    {%- when 'feature_2_text' -%}Dishwasher safe designs that make cleanup a breeze after every meal.
+    {%- when 'feature_3_title' -%}Modern Design
+    {%- when 'feature_3_text' -%}Sleek, functional designs that look great on your countertop and in your cabinets.
+    {%- when 'testimonial_1_text' -%}The cookware set is incredible — heats evenly and cleans up so easily. Best purchase this year!
+    {%- when 'testimonial_1_author' -%}Rajesh K.
+    {%- when 'testimonial_2_text' -%}Beautiful design and amazing quality. My kitchen has never looked this good!
+    {%- when 'testimonial_2_author' -%}Susan M.
+    {%- when 'testimonial_3_text' -%}Everything arrived perfectly packed. The knife set is sharp and well-balanced. Highly recommend!
+    {%- when 'testimonial_3_author' -%}Carlos D.
+    {%- when 'faq_1_q' -%}Are your products dishwasher safe?
+    {%- when 'faq_1_a' -%}Most of our products are dishwasher safe. Check individual product pages for specific care instructions.
+    {%- when 'faq_2_q' -%}What materials do you use?
+    {%- when 'faq_2_a' -%}We use food-grade stainless steel, BPA-free plastics, natural bamboo, and premium silicone — all safe for food contact.
+    {%- when 'faq_3_q' -%}Do you offer sets or bundles?
+    {%- when 'faq_3_a' -%}Yes! We offer curated kitchen sets and bundles at a discount. Check our collections for starter kits and bundle deals.
+    {%- when 'faq_4_q' -%}What if an item arrives damaged?
+    {%- when 'faq_4_a' -%}We will replace it immediately at no cost. Just contact us with a photo within 48 hours of delivery.
+    {%- when 'cat_1' -%}Cookware
+    {%- when 'cat_2' -%}Utensils
+    {%- when 'cat_3' -%}Storage
+    {%- when 'color_primary' -%}#5C4033
+    {%- when 'color_accent' -%}#C17817
+    {%- when 'color_heading' -%}#3E2723
+    {%- when 'color_bg' -%}#FBF7F4
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- when 'electronics' -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}Tech That Moves You Forward
+    {%- when 'hero_subheading' -%}Cutting-edge electronics and gadgets for the modern lifestyle. Innovation meets affordability.
+    {%- when 'about_heading' -%}Smart Tech, Smart Prices
+    {%- when 'about_text' -%}We bring you the latest in technology without the premium price tag. Every product is tested, verified, and backed by our warranty.
+    {%- when 'newsletter_heading' -%}Stay Plugged In
+    {%- when 'newsletter_subheading' -%}Be first to know about new tech drops, flash sales, and exclusive deals.
+    {%- when 'feature_1_title' -%}Latest Technology
+    {%- when 'feature_1_text' -%}We stock only the newest tech — updated catalog with the latest releases every month.
+    {%- when 'feature_2_title' -%}1-Year Warranty
+    {%- when 'feature_2_text' -%}Every product comes with a minimum 1-year warranty. Shop with total confidence.
+    {%- when 'feature_3_title' -%}Expert Support
+    {%- when 'feature_3_text' -%}Tech-savvy support team available to help you choose and troubleshoot any product.
+    {%- when 'testimonial_1_text' -%}Great prices for genuine products. The Bluetooth speaker sounds amazing for the price!
+    {%- when 'testimonial_1_author' -%}Amit P.
+    {%- when 'testimonial_2_text' -%}Warranty actually works! Had an issue and got a replacement within a week.
+    {%- when 'testimonial_2_author' -%}Kevin L.
+    {%- when 'testimonial_3_text' -%}Best place to buy accessories. Fast shipping and everything works perfectly.
+    {%- when 'testimonial_3_author' -%}Fatima A.
+    {%- when 'faq_1_q' -%}Do all products come with warranty?
+    {%- when 'faq_1_a' -%}Yes! Every product includes a minimum 1-year manufacturer warranty. Extended warranty options are available at checkout.
+    {%- when 'faq_2_q' -%}Are these genuine products?
+    {%- when 'faq_2_a' -%}100% genuine and authenticated. We source directly from manufacturers and authorized distributors only.
+    {%- when 'faq_3_q' -%}What if my product is defective?
+    {%- when 'faq_3_a' -%}Contact us within 7 days for a replacement or full refund. We handle all defective item claims quickly.
+    {%- when 'faq_4_q' -%}Do you provide tech support?
+    {%- when 'faq_4_a' -%}Yes! Our tech support team can help with setup, troubleshooting, and compatibility questions via email or chat.
+    {%- when 'cat_1' -%}Gadgets
+    {%- when 'cat_2' -%}Audio
+    {%- when 'cat_3' -%}Accessories
+    {%- when 'color_primary' -%}#0F172A
+    {%- when 'color_accent' -%}#3B82F6
+    {%- when 'color_heading' -%}#0F172A
+    {%- when 'color_bg' -%}#F8FAFC
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- when 'beauty' -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}Your Natural Beauty, Enhanced
+    {%- when 'hero_subheading' -%}Clean, effective skincare and beauty products that let your natural beauty shine through.
+    {%- when 'about_heading' -%}Clean Beauty, Real Results
+    {%- when 'about_text' -%}We believe in beauty that is kind — to your skin and to the planet. Every product is cruelty-free, clean, and dermatologist tested.
+    {%- when 'newsletter_heading' -%}Beauty Tips & Deals
+    {%- when 'newsletter_subheading' -%}Get skincare routines, beauty tips, and exclusive subscriber-only discounts.
+    {%- when 'feature_1_title' -%}Cruelty Free
+    {%- when 'feature_1_text' -%}Never tested on animals. Every product is certified cruelty-free and vegan-friendly.
+    {%- when 'feature_2_title' -%}Clean Ingredients
+    {%- when 'feature_2_text' -%}No parabens, sulfates, or harmful chemicals. Just pure, effective ingredients.
+    {%- when 'feature_3_title' -%}Dermatologist Tested
+    {%- when 'feature_3_text' -%}Clinically tested and approved by dermatologists for all skin types.
+    {%- when 'testimonial_1_text' -%}My skin has never looked better! The serum is a game-changer. Clean ingredients that actually work.
+    {%- when 'testimonial_1_author' -%}Meera J.
+    {%- when 'testimonial_2_text' -%}Love that everything is cruelty-free. The moisturizer is lightweight and so hydrating!
+    {%- when 'testimonial_2_author' -%}Sophie L.
+    {%- when 'testimonial_3_text' -%}Sensitive skin approved! No irritation, beautiful packaging, and fast delivery.
+    {%- when 'testimonial_3_author' -%}Alicia C.
+    {%- when 'faq_1_q' -%}Are your products suitable for sensitive skin?
+    {%- when 'faq_1_a' -%}Yes! All products are dermatologist tested and formulated for all skin types, including sensitive skin.
+    {%- when 'faq_2_q' -%}Are all products cruelty-free?
+    {%- when 'faq_2_a' -%}Absolutely. We are 100% cruelty-free and never test on animals. Many products are also vegan.
+    {%- when 'faq_3_q' -%}How do I choose the right product for my skin?
+    {%- when 'faq_3_a' -%}Each product page includes a skin type guide. You can also contact us for personalized skincare recommendations.
+    {%- when 'faq_4_q' -%}What is the shelf life of your products?
+    {%- when 'faq_4_a' -%}Most products have a shelf life of 12-24 months. Each product is labeled with a period-after-opening symbol.
+    {%- when 'cat_1' -%}Skincare
+    {%- when 'cat_2' -%}Makeup
+    {%- when 'cat_3' -%}Hair Care
+    {%- when 'color_primary' -%}#8B5E6B
+    {%- when 'color_accent' -%}#D4A574
+    {%- when 'color_heading' -%}#5C3D4A
+    {%- when 'color_bg' -%}#FDF8F5
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- when 'sports' -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}Push Your Limits
+    {%- when 'hero_subheading' -%}Performance gear and fitness essentials to fuel your active lifestyle. Train harder, recover faster.
+    {%- when 'about_heading' -%}Built for Performance
+    {%- when 'about_text' -%}From gym to trail, our gear is designed for athletes who demand the best. Tested by real athletes in real conditions.
+    {%- when 'newsletter_heading' -%}Level Up Your Game
+    {%- when 'newsletter_subheading' -%}Get workout tips, gear reviews, and exclusive athlete discounts.
+    {%- when 'feature_1_title' -%}Performance Tested
+    {%- when 'feature_1_text' -%}Every product is tested by real athletes in real training conditions.
+    {%- when 'feature_2_title' -%}Sweat-Proof
+    {%- when 'feature_2_text' -%}Moisture-wicking, breathable materials that keep up with your toughest workouts.
+    {%- when 'feature_3_title' -%}Satisfaction Guarantee
+    {%- when 'feature_3_text' -%}Not happy with your gear? Full refund within 30 days, no questions asked.
+    {%- when 'testimonial_1_text' -%}The gym gear is top quality. Survived months of heavy training without any wear.
+    {%- when 'testimonial_1_author' -%}Alex R.
+    {%- when 'testimonial_2_text' -%}Best running shoes and compression wear I have used. Great prices too!
+    {%- when 'testimonial_2_author' -%}Pooja D.
+    {%- when 'testimonial_3_text' -%}Love the moisture-wicking fabric. Perfect for intense workouts. Ordering more!
+    {%- when 'testimonial_3_author' -%}Jordan F.
+    {%- when 'faq_1_q' -%}What sizes do you carry for activewear?
+    {%- when 'faq_1_a' -%}We carry XS to 3XL in most styles. Check the size chart on each product page for specific measurements.
+    {%- when 'faq_2_q' -%}Are the materials sweat-proof?
+    {%- when 'faq_2_a' -%}Yes! Our activewear uses advanced moisture-wicking fabrics that keep you dry during intense workouts.
+    {%- when 'faq_3_q' -%}Do you offer team or bulk discounts?
+    {%- when 'faq_3_a' -%}Yes! Contact us for team orders of 10+ items. We offer custom sizing and bulk pricing.
+    {%- when 'faq_4_q' -%}How do I wash performance gear?
+    {%- when 'faq_4_a' -%}Machine wash cold, hang dry. Avoid fabric softeners as they can reduce moisture-wicking performance.
+    {%- when 'cat_1' -%}Equipment
+    {%- when 'cat_2' -%}Apparel
+    {%- when 'cat_3' -%}Supplements
+    {%- when 'color_primary' -%}#1B4332
+    {%- when 'color_accent' -%}#FF6B00
+    {%- when 'color_heading' -%}#1B4332
+    {%- when 'color_bg' -%}#F5F9F7
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- when 'jewelry' -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}Timeless Elegance
+    {%- when 'hero_subheading' -%}Handcrafted jewelry and accessories that make every moment unforgettable.
+    {%- when 'about_heading' -%}Crafted with Passion
+    {%- when 'about_text' -%}Each piece tells a story. Our artisans pour their heart into creating jewelry that celebrates your unique beauty and style.
+    {%- when 'newsletter_heading' -%}Sparkle First
+    {%- when 'newsletter_subheading' -%}Be first to see new collections, limited editions, and VIP-only offers.
+    {%- when 'feature_1_title' -%}Handcrafted
+    {%- when 'feature_1_text' -%}Each piece is meticulously handcrafted by skilled artisans with attention to every detail.
+    {%- when 'feature_2_title' -%}Premium Materials
+    {%- when 'feature_2_text' -%}Sterling silver, 18K gold plated, and genuine gemstones. Quality you can see and feel.
+    {%- when 'feature_3_title' -%}Gift Ready
+    {%- when 'feature_3_text' -%}Every order ships in a beautiful gift box, ready to delight someone special.
+    {%- when 'testimonial_1_text' -%}The necklace is stunning! Photos do not do it justice. Arrived in a gorgeous gift box too.
+    {%- when 'testimonial_1_author' -%}Riya S.
+    {%- when 'testimonial_2_text' -%}My girlfriend loved the earrings. Beautiful craftsmanship and fast delivery.
+    {%- when 'testimonial_2_author' -%}Michael T.
+    {%- when 'testimonial_3_text' -%}I wear mine every day and it still looks brand new after months. Outstanding quality!
+    {%- when 'testimonial_3_author' -%}Diana M.
+    {%- when 'faq_1_q' -%}What materials are your jewelry made from?
+    {%- when 'faq_1_a' -%}We use sterling silver, 18K gold plating, stainless steel, and genuine gemstones. All hypoallergenic and nickel-free.
+    {%- when 'faq_2_q' -%}Will the jewelry tarnish?
+    {%- when 'faq_2_a' -%}Our pieces are designed to be tarnish-resistant. We include care instructions with every order.
+    {%- when 'faq_3_q' -%}Do you offer gift wrapping?
+    {%- when 'faq_3_a' -%}Every piece ships in an elegant gift box at no extra charge. Perfect for special occasions.
+    {%- when 'faq_4_q' -%}Can I return or exchange jewelry?
+    {%- when 'faq_4_a' -%}Yes! Unworn items can be returned within 30 days for a full refund. Exchanges are also available.
+    {%- when 'cat_1' -%}Necklaces
+    {%- when 'cat_2' -%}Rings
+    {%- when 'cat_3' -%}Earrings
+    {%- when 'color_primary' -%}#1C1C1C
+    {%- when 'color_accent' -%}#C9A96E
+    {%- when 'color_heading' -%}#1C1C1C
+    {%- when 'color_bg' -%}#FAF8F5
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1630019852942-f89202989a59?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- when 'pets' -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}Everything Your Pet Deserves
+    {%- when 'hero_subheading' -%}Premium supplies, treats, and toys for your furry, feathered, or scaly best friend.
+    {%- when 'about_heading' -%}Because Pets Are Family
+    {%- when 'about_text' -%}We are pet parents too. That is why every product is carefully vetted for safety, quality, and tail-wagging approval.
+    {%- when 'newsletter_heading' -%}Paws & Updates
+    {%- when 'newsletter_subheading' -%}Get pet care tips, new product alerts, and subscriber-only discounts.
+    {%- when 'feature_1_title' -%}Vet Approved
+    {%- when 'feature_1_text' -%}All food and health products are recommended and approved by veterinarians.
+    {%- when 'feature_2_title' -%}Natural Ingredients
+    {%- when 'feature_2_text' -%}No fillers, no artificial colors. Just real, wholesome ingredients your pet will love.
+    {%- when 'feature_3_title' -%}Happy Pet Guarantee
+    {%- when 'feature_3_text' -%}If your pet does not love it, we will refund you. Simple as that.
+    {%- when 'testimonial_1_text' -%}My dog goes crazy for these treats! Love that they are all-natural. Reordering monthly!
+    {%- when 'testimonial_1_author' -%}Vikram S.
+    {%- when 'testimonial_2_text' -%}Best pet toys we have found online. Durable, safe, and my cat actually plays with them!
+    {%- when 'testimonial_2_author' -%}Emma W.
+    {%- when 'testimonial_3_text' -%}Great quality pet bed. Our golden retriever claimed it immediately and sleeps soundly.
+    {%- when 'testimonial_3_author' -%}Paul N.
+    {%- when 'faq_1_q' -%}Are your treats safe for puppies?
+    {%- when 'faq_1_a' -%}Most of our treats are safe for puppies 8 weeks and older. Each product lists the recommended age.
+    {%- when 'faq_2_q' -%}Do you carry products for cats too?
+    {%- when 'faq_2_a' -%}Yes! We carry products for dogs, cats, birds, fish, and small animals. Browse by pet type.
+    {%- when 'faq_3_q' -%}What if my pet does not like the food?
+    {%- when 'faq_3_a' -%}We offer a happy pet guarantee! If your pet does not enjoy the product, contact us for a full refund.
+    {%- when 'faq_4_q' -%}Is free shipping available?
+    {%- when 'faq_4_a' -%}Yes! Free standard shipping on all orders over $50. Subscribe and save options also include free shipping.
+    {%- when 'cat_1' -%}Dog Supplies
+    {%- when 'cat_2' -%}Cat Supplies
+    {%- when 'cat_3' -%}Pet Toys
+    {%- when 'color_primary' -%}#4A6741
+    {%- when 'color_accent' -%}#E07A2F
+    {%- when 'color_heading' -%}#2D4228
+    {%- when 'color_bg' -%}#F7F9F5
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1535294435445-d7249b8f32b1?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- when 'food' -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}Fresh. Delicious. Delivered.
+    {%- when 'hero_subheading' -%}Premium food and grocery essentials delivered straight to your door. Quality you can taste.
+    {%- when 'about_heading' -%}From Farm to Your Table
+    {%- when 'about_text' -%}We partner with local farms and artisan producers to bring you the freshest, highest-quality food and ingredients.
+    {%- when 'newsletter_heading' -%}Tasty Updates
+    {%- when 'newsletter_subheading' -%}Get recipes, seasonal picks, and exclusive food lover discounts.
+    {%- when 'feature_1_title' -%}Freshness Guaranteed
+    {%- when 'feature_1_text' -%}Every order is packed fresh and shipped with care to maintain peak quality.
+    {%- when 'feature_2_title' -%}Locally Sourced
+    {%- when 'feature_2_text' -%}We partner with local farms and artisan producers for the best ingredients.
+    {%- when 'feature_3_title' -%}Fast Delivery
+    {%- when 'feature_3_text' -%}Temperature-controlled packaging ensures your food arrives in perfect condition.
+    {%- when 'testimonial_1_text' -%}The spice collection is incredible. Authentic flavors that transformed my cooking!
+    {%- when 'testimonial_1_author' -%}Pradeep R.
+    {%- when 'testimonial_2_text' -%}Love the organic selection. Everything arrives fresh and well-packaged.
+    {%- when 'testimonial_2_author' -%}Hannah B.
+    {%- when 'testimonial_3_text' -%}Best artisan chocolate I have ever had. Already gifted boxes to all my friends!
+    {%- when 'testimonial_3_author' -%}Leo C.
+    {%- when 'faq_1_q' -%}How is the food packaged for shipping?
+    {%- when 'faq_1_a' -%}We use insulated, food-safe packaging to keep everything fresh during transit. Perishable items include ice packs.
+    {%- when 'faq_2_q' -%}Do you cater to dietary restrictions?
+    {%- when 'faq_2_a' -%}Yes! We label all products for common allergens and offer gluten-free, vegan, keto, and organic options.
+    {%- when 'faq_3_q' -%}What if items arrive damaged?
+    {%- when 'faq_3_a' -%}Contact us within 24 hours with a photo and we will send a replacement or full refund immediately.
+    {%- when 'faq_4_q' -%}Do you offer subscription boxes?
+    {%- when 'faq_4_a' -%}Yes! Our monthly subscription boxes feature curated selections of seasonal favorites at a discounted price.
+    {%- when 'cat_1' -%}Snacks
+    {%- when 'cat_2' -%}Spices
+    {%- when 'cat_3' -%}Organic
+    {%- when 'color_primary' -%}#5B7553
+    {%- when 'color_accent' -%}#D35400
+    {%- when 'color_heading' -%}#3E5137
+    {%- when 'color_bg' -%}#FAFBF7
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- when 'furniture' -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}Design Your Dream Space
+    {%- when 'hero_subheading' -%}Modern furniture and home decor that transforms your space. Style meets comfort.
+    {%- when 'about_heading' -%}Spaces That Inspire
+    {%- when 'about_text' -%}We design and curate furniture that brings your vision to life. Every piece is crafted for comfort, durability, and timeless style.
+    {%- when 'newsletter_heading' -%}Interior Inspiration
+    {%- when 'newsletter_subheading' -%}Get decor ideas, new collection previews, and exclusive home deals.
+    {%- when 'feature_1_title' -%}Solid Craftsmanship
+    {%- when 'feature_1_text' -%}Built with premium hardwoods and quality materials that stand the test of time.
+    {%- when 'feature_2_title' -%}Easy Assembly
+    {%- when 'feature_2_text' -%}Clear instructions and included tools. Most pieces assemble in under 30 minutes.
+    {%- when 'feature_3_title' -%}Room Visualization
+    {%- when 'feature_3_text' -%}See how furniture looks in your space with our product photos and dimension guides.
+    {%- when 'testimonial_1_text' -%}The sofa is gorgeous and so comfortable. Assembly was easy and it looks expensive!
+    {%- when 'testimonial_1_author' -%}Rohan B.
+    {%- when 'testimonial_2_text' -%}Beautiful dining table that fits perfectly. Customer service helped me choose the right size.
+    {%- when 'testimonial_2_author' -%}Kelly S.
+    {%- when 'testimonial_3_text' -%}Modern design at reasonable prices. The bookshelf is sturdy and looks amazing.
+    {%- when 'testimonial_3_author' -%}Chris P.
+    {%- when 'faq_1_q' -%}Do you offer assembly services?
+    {%- when 'faq_1_a' -%}All furniture comes with clear assembly instructions and included hardware. Professional assembly is available in select areas.
+    {%- when 'faq_2_q' -%}What are your delivery options for furniture?
+    {%- when 'faq_2_a' -%}We offer standard delivery (7-14 days) and white-glove delivery with in-room placement in select cities.
+    {%- when 'faq_3_q' -%}Can I see the furniture dimensions before ordering?
+    {%- when 'faq_3_a' -%}Yes! Every product page includes detailed dimensions, weight, and space planning tips.
+    {%- when 'faq_4_q' -%}What is your return policy for furniture?
+    {%- when 'faq_4_a' -%}We offer a 14-day return policy for furniture in original condition. Contact us to arrange pickup and refund.
+    {%- when 'cat_1' -%}Living Room
+    {%- when 'cat_2' -%}Bedroom
+    {%- when 'cat_3' -%}Home Decor
+    {%- when 'color_primary' -%}#4A4238
+    {%- when 'color_accent' -%}#B8860B
+    {%- when 'color_heading' -%}#3A342C
+    {%- when 'color_bg' -%}#FAF8F5
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- else -%}
+  {%- comment -%} General / default {%- endcomment -%}
+  {%- case key -%}
+    {%- when 'hero_heading' -%}Welcome to {{ shop.name }}
+    {%- when 'hero_subheading' -%}Discover our curated collection of premium products. Quality, style, and value — all in one place.
+    {%- when 'about_heading' -%}About {{ shop.name }}
+    {%- when 'about_text' -%}At {{ shop.name }}, we believe great products should be accessible to everyone. We curate the best items with quality, style, and value in mind.
+    {%- when 'newsletter_heading' -%}Join the {{ shop.name }} family
+    {%- when 'newsletter_subheading' -%}Be the first to know about new collections and exclusive offers.
+    {%- when 'feature_1_title' -%}Free Shipping
+    {%- when 'feature_1_text' -%}Free shipping on all orders over $50. No hidden fees, no surprises.
+    {%- when 'feature_2_title' -%}24/7 Support
+    {%- when 'feature_2_text' -%}Our dedicated support team is here around the clock to help you.
+    {%- when 'feature_3_title' -%}Easy Returns
+    {%- when 'feature_3_text' -%}Not satisfied? Return within 30 days for a full refund. No questions asked.
+    {%- when 'testimonial_1_text' -%}Amazing quality and fast shipping. Will definitely order again!
+    {%- when 'testimonial_1_author' -%}Sarah M.
+    {%- when 'testimonial_2_text' -%}Exactly what I was looking for. The customer service team was incredibly helpful.
+    {%- when 'testimonial_2_author' -%}James K.
+    {%- when 'testimonial_3_text' -%}Beautiful products at great prices. My new favorite store!
+    {%- when 'testimonial_3_author' -%}Emily R.
+    {%- when 'faq_1_q' -%}What is your return policy?
+    {%- when 'faq_1_a' -%}We offer a 30-day return policy on all unused items in their original packaging. Contact support to start a return.
+    {%- when 'faq_2_q' -%}How long does shipping take?
+    {%- when 'faq_2_a' -%}Standard shipping takes 5-7 business days. Express (2-3 days) is available at checkout.
+    {%- when 'faq_3_q' -%}Do you ship internationally?
+    {%- when 'faq_3_a' -%}Yes! We ship to most countries worldwide. International shipping typically takes 10-15 business days.
+    {%- when 'faq_4_q' -%}How can I track my order?
+    {%- when 'faq_4_a' -%}Once your order ships, you will receive an email with a tracking number to track your package in real-time.
+    {%- when 'cat_1' -%}New Arrivals
+    {%- when 'cat_2' -%}Best Sellers
+    {%- when 'cat_3' -%}On Sale
+    {%- when 'color_primary' -%}#1A1A2E
+    {%- when 'color_accent' -%}#E94560
+    {%- when 'color_heading' -%}#1A1A2E
+    {%- when 'color_bg' -%}#FFFFFF
+      {%- when 'hero_image' -%}https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&h=1080&fit=crop
+    {%- when 'story_image' -%}https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=800&fit=crop
+    {%- when 'cat_1_image' -%}https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=800&fit=crop
+    {%- when 'cat_2_image' -%}https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=800&fit=crop
+    {%- when 'cat_3_image' -%}https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&h=800&fit=crop
+  {%- endcase -%}
+
+{%- endcase -%}

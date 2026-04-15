@@ -1,0 +1,93 @@
+{%- capture niche_hero_heading -%}{%- render 'niche-value', key: 'hero_heading' -%}{%- endcapture -%}
+{%- capture niche_hero_subheading -%}{%- render 'niche-value', key: 'hero_subheading' -%}{%- endcapture -%}
+
+{%- liquid
+  assign height_class = 'hero--medium'
+  if section.settings.height == 'full'
+    assign height_class = 'hero--full'
+  elsif section.settings.height == 'small'
+    assign height_class = 'hero--small'
+  endif
+
+  assign content_class = ''
+  if section.settings.content_position == 'center'
+    assign content_class = 'hero__content--center'
+  elsif section.settings.content_position == 'right'
+    assign content_class = 'hero__content--right'
+  endif
+
+  assign hero_heading = section.settings.heading
+  if hero_heading == blank
+    assign hero_heading = niche_hero_heading
+  endif
+
+  assign hero_subheading = section.settings.subheading
+  if hero_subheading == blank
+    assign hero_subheading = niche_hero_subheading
+  endif
+-%}
+
+<div class="hero {{ height_class }}">
+  <div class="hero__media">
+    {%- if section.settings.image != blank -%}
+      <img src="{{ section.settings.image | image_url: width: 1920 }}" alt="{{ section.settings.image.alt | escape }}" loading="eager" fetchpriority="high" width="1920" height="{{ 1920 | divided_by: section.settings.image.aspect_ratio | round }}">
+    {%- else -%}
+      {%- capture niche_hero_image -%}{%- render 'niche-value', key: 'hero_image' -%}{%- endcapture -%}
+      {%- assign niche_hero_image = niche_hero_image | strip -%}
+      {%- if niche_hero_image != blank -%}
+        <img src="{{ niche_hero_image }}" alt="Hero banner" loading="eager" fetchpriority="high" width="1920" height="1080" onerror="this.style.display='none'">
+      {%- else -%}
+        {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    {%- endif -%}
+  </div>
+
+  <div class="hero__overlay" style="background-color: {{ section.settings.overlay_color }}; opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};"></div>
+
+  <div class="page-width" style="width: 100%; position: relative; z-index: 2;">
+    <div class="hero__content {{ content_class }}" style="color: {{ section.settings.text_color }};">
+      <h1 class="hero__title" style="color: {{ section.settings.text_color }};">{{ hero_heading }}</h1>
+      <p class="hero__text">{{ hero_subheading }}</p>
+
+      <div class="hero__buttons">
+        {%- if section.settings.button_label != blank -%}
+          <a href="{{ section.settings.button_link | default: routes.all_products_collection_url }}" class="btn btn--primary btn--large">{{ section.settings.button_label }}</a>
+        {%- else -%}
+          <a href="{{ routes.all_products_collection_url }}" class="btn btn--primary btn--large">Shop now</a>
+        {%- endif -%}
+
+        {%- if section.settings.button_label_2 != blank -%}
+          <a href="{{ section.settings.button_link_2 }}" class="btn btn--secondary btn--large" style="border-color: {{ section.settings.text_color }}; color: {{ section.settings.text_color }};">{{ section.settings.button_label_2 }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero banner",
+  "tag": "section",
+  "class": "section-hero",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Background image" },
+    { "type": "select", "id": "height", "label": "Section height", "options": [{ "value": "small", "label": "Small" }, { "value": "medium", "label": "Medium" }, { "value": "full", "label": "Full screen" }], "default": "medium" },
+    { "type": "header", "content": "Overlay" },
+    { "type": "color", "id": "overlay_color", "label": "Overlay color", "default": "#000000" },
+    { "type": "range", "id": "overlay_opacity", "label": "Overlay opacity", "min": 0, "max": 90, "step": 5, "unit": "%", "default": 35 },
+    { "type": "header", "content": "Content" },
+    { "type": "paragraph", "content": "Leave blank to auto-fill based on your store niche." },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "textarea", "id": "subheading", "label": "Subheading" },
+    { "type": "select", "id": "content_position", "label": "Content position", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Center" }, { "value": "right", "label": "Right" }], "default": "center" },
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#FFFFFF" },
+    { "type": "header", "content": "Primary button" },
+    { "type": "text", "id": "button_label", "label": "Button label" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "header", "content": "Secondary button" },
+    { "type": "text", "id": "button_label_2", "label": "Button label" },
+    { "type": "url", "id": "button_link_2", "label": "Button link" }
+  ],
+  "presets": [{ "name": "Hero banner" }]
+}
+{% endschema %}

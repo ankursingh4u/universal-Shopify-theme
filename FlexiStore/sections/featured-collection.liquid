@@ -1,0 +1,74 @@
+{%- liquid
+  assign collection = section.settings.collection
+  assign limit = section.settings.products_to_show
+  assign columns = section.settings.columns
+-%}
+
+<div class="section{% if section.settings.use_alt_bg %} section--alt{% endif %}">
+  <div class="page-width">
+    <div class="section-header{% if section.settings.heading_alignment == 'center' %} text-center{% endif %}">
+      <h2>
+        {%- if section.settings.heading != blank -%}
+          {{ section.settings.heading }}
+        {%- else -%}
+          {{ shop.name }} Collection
+        {%- endif -%}
+      </h2>
+      {%- if section.settings.subheading != blank -%}
+        <p class="subtitle">{{ section.settings.subheading }}</p>
+      {%- endif -%}
+    </div>
+
+    {%- if collection != blank -%}
+      {%- assign target_collection = collections[collection] -%}
+    {%- else -%}
+      {%- assign target_collection = collections['all'] -%}
+    {%- endif -%}
+
+    {%- if target_collection.products.size > 0 -%}
+      <div class="grid grid--{{ columns }}">
+        {%- for product in target_collection.products limit: limit -%}
+          <div>{% render 'card-product', product: product %}</div>
+        {%- endfor -%}
+      </div>
+      {%- if section.settings.show_view_all -%}
+        <div class="text-center" style="margin-top: 2rem;">
+          <a href="{{ target_collection.url }}" class="btn btn--secondary">{{ 'general.view_all' | t }}</a>
+        </div>
+      {%- endif -%}
+    {%- else -%}
+      <div class="grid grid--{{ columns }}">
+        {%- for i in (1..limit) -%}
+          <div class="card card--{{ settings.card_style }}">
+            <div class="card__media card__media--{{ settings.card_image_ratio }}">
+              {{ 'product-' | append: forloop.index | placeholder_svg_tag: 'placeholder-svg' }}
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">Example product {{ forloop.index }}</h3>
+              <div class="card__price"><span>$29.99</span></div>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Featured collection",
+  "tag": "section",
+  "class": "section-featured-collection",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "text", "id": "subheading", "label": "Subheading" },
+    { "type": "select", "id": "heading_alignment", "label": "Heading alignment", "options": [{ "value": "left", "label": "Left" }, { "value": "center", "label": "Center" }], "default": "center" },
+    { "type": "collection", "id": "collection", "label": "Collection" },
+    { "type": "range", "id": "products_to_show", "label": "Products to show", "min": 2, "max": 12, "step": 1, "default": 4 },
+    { "type": "select", "id": "columns", "label": "Columns", "options": [{ "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" }], "default": "4" },
+    { "type": "checkbox", "id": "show_view_all", "label": "Show 'View all' button", "default": true },
+    { "type": "checkbox", "id": "use_alt_bg", "label": "Use alternate background color", "default": false }
+  ],
+  "presets": [{ "name": "Featured collection" }]
+}
+{% endschema %}

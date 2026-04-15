@@ -1,0 +1,54 @@
+<div class="section">
+  <div class="page-width">
+    <a href="{{ routes.account_url }}" style="font-size: 0.875rem; margin-bottom: 1rem; display: inline-block;">&larr; Back to account</a>
+    <h1>{{ order.name }}</h1>
+    <p style="color: var(--color-text-light); margin-bottom: 2rem;">
+      Placed on {{ order.created_at | date: '%B %d, %Y at %I:%M %p' }}
+    </p>
+
+    {%- for line_item in order.line_items -%}
+      <div class="cart__item" style="display: flex; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--color-border); align-items: center;">
+        {%- if line_item.image -%}
+          <div style="width: 80px; flex-shrink: 0; border-radius: var(--btn-border-radius); overflow: hidden;">
+            <img src="{{ line_item.image | image_url: width: 160 }}" alt="{{ line_item.title | escape }}" loading="lazy" width="80" height="80" style="width:100%;aspect-ratio:1;object-fit:cover;">
+          </div>
+        {%- endif -%}
+        <div style="flex: 1;">
+          <p style="font-weight: 600;">{{ line_item.title }}</p>
+          {%- if line_item.variant.title != 'Default Title' -%}
+            <p style="font-size: 0.8125rem; color: var(--color-text-light);">{{ line_item.variant.title }}</p>
+          {%- endif -%}
+          <p style="font-size: 0.875rem; margin-top: 0.25rem;">{{ line_item.quantity }} x {{ line_item.price | money }}</p>
+        </div>
+        <div style="font-weight: 600;">{{ line_item.final_line_price | money }}</div>
+      </div>
+    {%- endfor -%}
+
+    <div style="max-width: 350px; margin-left: auto; margin-top: 1.5rem;">
+      <div style="display: flex; justify-content: space-between; padding: 0.4rem 0;">
+        <span>Subtotal</span><span>{{ order.subtotal_price | money }}</span>
+      </div>
+      {%- for shipping_method in order.shipping_methods -%}
+        <div style="display: flex; justify-content: space-between; padding: 0.4rem 0;">
+          <span>Shipping ({{ shipping_method.title }})</span><span>{{ shipping_method.price | money }}</span>
+        </div>
+      {%- endfor -%}
+      {%- if order.tax_price > 0 -%}
+        <div style="display: flex; justify-content: space-between; padding: 0.4rem 0;">
+          <span>Tax</span><span>{{ order.tax_price | money }}</span>
+        </div>
+      {%- endif -%}
+      <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-top: 2px solid var(--color-border); font-weight: 700; font-size: 1.125rem; margin-top: 0.5rem;">
+        <span>Total</span><span>{{ order.total_price | money }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Customer order",
+  "tag": "section",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,53 @@
+{%- if recommendations.performed and recommendations.products_count > 0 -%}
+  <div class="section section--alt">
+    <div class="page-width">
+      <div class="section-header">
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+
+      <div class="product-slider" data-product-slider>
+        <div class="product-slider__track" data-slider-track>
+          {%- for product in recommendations.products limit: section.settings.products_to_show -%}
+            <div class="product-slider__slide">
+              {% render 'card-product', product: product %}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <div class="product-slider__nav" style="margin-top: 1.5rem;">
+        <button class="product-slider__btn" data-slider-prev aria-label="Previous">
+          {% render 'icon-arrow-left' %}
+        </button>
+        <button class="product-slider__btn" data-slider-next aria-label="Next">
+          {% render 'icon-arrow-right' %}
+        </button>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Product recommendations",
+  "tag": "section",
+  "class": "section-product-recommendations",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "You may also like"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "label": "Products to show",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "default": 4
+    }
+  ]
+}
+{% endschema %}
